@@ -1,7 +1,6 @@
 import React from 'react';
-
-import Layout from '../components/UI/Layout';
-import SEO from '../components/SEO';
+import SEO from '../common/components/SEO';
+import Layout from '../common/components/UI/Layout';
 
 interface NotFoundPageProps {}
 

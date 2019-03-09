@@ -1,6 +1,5 @@
+import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-
 import Header from './Header';
 
 interface LayoutProps {}
