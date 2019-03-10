@@ -30,10 +30,10 @@ const BlogPostTemplate: React.SFC<PostTemplateProps> = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <div className="font-sans">
-        <h1 className="text-blue-lighter">{title}</h1>
+      <div className="font-exo">
+        <h1 className="text-blue-lighter mb-5">{title}</h1>
         {post.frontmatter.postImage && <Img fluid={post.frontmatter.postImage.childImageSharp.fluid} />}
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div className="md-post" dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
   );

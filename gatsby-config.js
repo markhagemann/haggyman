@@ -10,7 +10,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Exo:300,400,600`]
+        fonts: [`Exo:300,400,600`, 'Titillium Web:400,600']
       }
     },
     'gatsby-plugin-offline',
@@ -83,7 +83,19 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 1400
+              maxWidth: 590
+            }
+          },
+          {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+              plugins: [`gatsby-remark-prismjs`]
+            }
+          },
+          {
+            resolve: `gatsby-remark-responsive-image`,
+            options: {
+              maxWidth: 590
             }
           }
         ]

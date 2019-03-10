@@ -5,20 +5,20 @@ interface NavbarProps {}
 
 const Navbar: React.SFC<NavbarProps> = (props: NavbarProps) => {
   return (
-    <div className="fixed w-full z-10 pin-t p-5 justify-center flex mt-2 mb-8 font-display text-lg md:pl-320 md:justify-start">
+    <div className="fixed w-full z-10 pin-t p-5 justify-center flex mt-2 mb-8 font-sans text-xl md:pl-320 md:justify-start">
       <ul className="list-reset flex">
         <li className="mr-6">
-          <Link to="/" className="text-blue-dark hover:text-blue-lighter no-underline">
+          <Link to="/" className="text-blue-dark hover:text-blue-lighter no-underline border-0">
             Home
           </Link>
         </li>
         <li className="mr-6">
-          <Link to="/portfolio" className="text-blue-dark hover:text-blue-lighter no-underline">
+          <Link to="/portfolio" className="text-blue-dark hover:text-blue-lighter no-underline border-0">
             Portfolio
           </Link>
         </li>
         <li className="mr-6">
-          <Link to="/blog" className="text-blue-dark hover:text-blue-lighter no-underline">
+          <Link to="/blog" className="text-blue-dark hover:text-blue-lighter no-underline border-0">
             Blog
           </Link>
         </li>

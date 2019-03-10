@@ -30,9 +30,11 @@ const PortfolioPostTemplate: React.SFC<PostTemplateProps> = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <h1>{title}</h1>
-      {post.frontmatter.postImage && <Img fluid={post.frontmatter.postImage.childImageSharp.fluid} />}
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <div className="font-sans">
+        <h1 className="text-blue-lighter mb-5">{title}</h1>
+        {post.frontmatter.postImage && <Img fluid={post.frontmatter.postImage.childImageSharp.fluid} />}
+        <div className="md-post" dangerouslySetInnerHTML={{ __html: post.html }} />
+      </div>
     </Layout>
   );
 };

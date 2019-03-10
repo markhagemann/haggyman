@@ -19,7 +19,7 @@ const Sidebar: React.SFC<SidebarProps> = (props: SidebarProps) => {
   return (
     <aside className={mobileClass(props)}>
       <Profile />
-      <div className="font-display m-2 text-center">
+      <div className="font-exo m-2 text-center">
         <h1 className="font-light text-blue-light">
           <span className="mr-2">Mark</span>
           <span className="font-bold">Hagemann </span>

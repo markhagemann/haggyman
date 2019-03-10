@@ -11,6 +11,56 @@
  */
 @tailwind preflight;
 
+b,
+strong {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 1.9em;
+}
+
+a {
+  transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+  border-bottom: 1px solid;
+  color: #6cb2eb;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom-color: transparent;
+}
+
+.gatsby-image-wrapper {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+.md-post h1,
+.md-post h2,
+.md-post h3 {
+  margin-bottom: 0.35em;
+}
+
+.md-post h1,
+.md-post h2,
+.md-post h3,
+.md-post h4,
+.md-post h5,
+.md-post h6 {
+  font-weight: 600;
+}
+
+.md-post p,
+.md-post ul,
+.md-post ol {
+  margin-bottom: 0.25em;
+}
+
+.md-post {
+  line-height: 1.5em;
+}
+
 /**
   * This injects any component classes registered by plugins.
   *

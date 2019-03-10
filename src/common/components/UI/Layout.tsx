@@ -22,7 +22,7 @@ const Layout: React.SFC<LayoutProps> = props => {
         }
       `}
       render={data => (
-        <main className="min-h-screen max-h-full bg-cover bg-blue-dark-custom text-grey">
+        <main className="min-h-screen max-h-full bg-cover bg-blue-dark-custom text-grey-light font-sans">
           <div className="container mx-auto px-1 md:mx-0 md:px-8">
             <Navbar />
             <div className="md:flex py-20">

@@ -5,7 +5,6 @@ description: 'This post is related to the gatsbyjs'
 date: '2018-12-02'
 slug: 'first-post'
 category: 'thoughts'
-postImage: './time.png'
 tags: ['javascript', 'react', 'gatsby']
 ---
 
@@ -44,18 +43,11 @@ prohibet, primo. Sequuntur et cornua tumulumque quoque circum Tmolo hos, fessam
 e cogeret spicula pervenientia angues elisa spumis. Est **limenque** dilectus
 aurea?
 
-    if (peopleware_right_certificate + moduleScarewareJava) {
-        gigabyteMultiprocessing = faq;
-    } else {
-        activex /= 78;
-        phishingPublicAlgorithm = client_file_cyberspace;
-    }
-    var mediaWavelengthFormula = 3 / 2 + smart;
-    var adsl_multicasting = trash.firmwarePageZettabyte(snippet, 5,
-            filenameBespokeCc) + edutainment.heuristic_gigabyte_dvd(60 + viral,
-            system, floatingAiff);
-    rdf_eps.key += superscalar_link + drive;
-    null = 1;
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
 
 ## Non habenas erat
 

@@ -192,8 +192,9 @@ module.exports = {
   */
 
   fonts: {
-    display: ['"Exo"'],
+    exo: ['Exo'],
     sans: [
+      'Titillium Web',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
