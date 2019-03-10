@@ -7,16 +7,19 @@ module.exports = {
     author: `@markhagemann`
   },
   plugins: [
-    'gatsby-plugin-offline',
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `PT Sans`,
-            variants: [`400`, `700`]
-          }
-        ]
+        fonts: [`Exo:300,400,600`]
+      }
+    },
+    'gatsby-plugin-offline',
+    `gatsby-plugin-postcss`,
+    {
+      resolve: 'gatsby-plugin-purgecss',
+      options: {
+        tailwind: true,
+        purgeOnly: ['src/css/global.css']
       }
     },
     `gatsby-plugin-react-helmet`,

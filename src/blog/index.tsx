@@ -29,7 +29,7 @@ const BlogIndex: React.SFC<BlogProps> = props => {
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <h1>Blog</h1>
       {posts.map(({ node }, i: number) => (
-        <Link to={`blog/${node.frontmatter.slug}`} key={i} className="link">
+        <Link to={`/blog/${node.frontmatter.slug}`} key={i} className="link">
           <div className="post-list">
             <h1>{node.frontmatter.title}</h1>
             <span>{node.frontmatter.date}</span>
