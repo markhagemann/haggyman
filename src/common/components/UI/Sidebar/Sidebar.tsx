@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import React from 'react';
 import Profile from './Profile';
+import Social from './Social';
 
 interface SidebarProps {
   siteTitle: string;
@@ -25,6 +26,7 @@ const Sidebar: React.SFC<SidebarProps> = (props: SidebarProps) => {
           <span className="font-bold">Hagemann </span>
         </h1>
         <h2 className="font-light  text-blue-dark my-2"> Full Stack Developer </h2>
+        <Social />
       </div>
     </aside>
   );

@@ -1,38 +1,26 @@
 ---
 type: 'blog'
-title: 'My first Blog post'
-description: 'This post is related to the gatsbyjs'
-date: '2018-12-02'
-slug: 'first-post'
+title: 'What I have learned as a junior'
+description: 'What my experiences as a junior developer has taught me'
+date: '2019-11-03'
+slug: 'learnings-as-a-junior'
 category: 'thoughts'
-tags: ['javascript', 'react', 'gatsby']
+tags: ['junior', 'developer', 'learning']
 ---
 
-# Solus Elateia
+## Imposter syndrome is real
 
-## Sudor aquis toro vel
+But it's entirely understandable to feel that way when you start out. Having the feeling
+that you don't know enough, will likely end up motivating you to become a much better developer.
+It also means that you feel you have a lot to learn from your colleagues, which is an excellent
+position to be in.
 
-Lorem markdownum circumflua miseram scissaeque mali ferinos? Frangitur quamvis;
-receptus [inpune](http://revelliquo.net/secutifronti), transit aliis conbibit,
-vix tegitur sacra, o. Nec Italiae sine **esse hosti**, densa ignotae, et vagans
-Numam fugavi, nil sermone triumphis, dignior carchesia. Et dixit tabuit
-**atque** templo. Qui durum sine, fors, parantes cupit.
+## Code reviews help... a lot
 
-1. Deus fugat vixque est superas freta laniaverat
-2. Pro ipso est quae
-3. Pudicos mutabile ego tuorum
+The importance of having someone review your code cannot be repeated enough.
 
-## Peneidas pulsat antiquae graciles nimium parat clamore
-
-Nymphe auxilioque vicerat flagrantemque illis dives se nomen ipsumque; artes
-**ipse** carina contraque ut thalami, solvo lacrimis. **Palilibus hic Hylen**
-Atridae pectora corruat causa sub spatio, _parvas hic silva_ facitis crinem.
-Indigenae addit exhalantem convicia nec ille nam; rapuere pedis tresque murmure
-hosti animo et naresque dixit. Virtus Nox scelus corpus tenebat socer. Sensit
-nimiumque Vestaque o index nec, sint.
-
-1. Aspexisse illa Diomede
-2. Haec Emathion Iuppiter iuvencum
+1. It reduces bugs in production
+2. You
 3. Perosus sequitur numina pondere iuvenemque sunt
 4. Forte discordia saevo occubuisse blanda hasta ubera
 

@@ -3,9 +3,9 @@ import React from 'react';
 
 interface NavbarProps {}
 
-const Navbar: React.SFC<NavbarProps> = (props: NavbarProps) => {
+const Navbar: React.SFC<NavbarProps> = () => {
   return (
-    <div className="fixed w-full z-10 pin-t p-5 justify-center flex mt-2 mb-8 font-sans text-xl md:pl-320 md:justify-start">
+    <div className="fixed w-full z-10 pin-t p-5 justify-center flex mt-2 mb-8 font-sans text-xl md:pl-310 md:justify-start">
       <ul className="list-reset flex">
         <li className="mr-6">
           <Link to="/" className="text-blue-dark hover:text-blue-lighter no-underline border-0">

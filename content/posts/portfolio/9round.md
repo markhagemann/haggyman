@@ -4,6 +4,7 @@ title: '9round - SilverStripe 3'
 description: 'Fitness website overhaul for 9round'
 date: '2018-03-10'
 slug: '9round'
+postImage: './time.png'
 company: 'LT Network'
 category: 'silverstripe'
 tags: ['javascript', 'react', 'gatsby']

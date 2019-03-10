@@ -27,11 +27,11 @@ const PortfolioIndex: React.SFC<PortfolioProps> = props => {
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <h1>What I've worked on</h1>
+      <h1>What I have worked on</h1>
       {posts.map(({ node }, i: number) => (
         <Link to={`/portfolio/${node.frontmatter.slug}`} key={i} className="link">
           <div className="post-list">
-            <h1>{node.frontmatter.title}</h1>
+            <h2>{node.frontmatter.title}</h2>
             <span>{node.frontmatter.date}</span>
             <p>{node.excerpt}</p>
           </div>
