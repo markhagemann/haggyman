@@ -1,5 +1,6 @@
 import { graphql, Link } from 'gatsby';
 import React from 'react';
+import Heading from '../common/components/Heading';
 import SEO from '../common/components/SEO';
 import Layout from '../common/components/UI/Layout';
 
@@ -25,9 +26,9 @@ interface PortfolioProps {
 const PortfolioIndex: React.SFC<PortfolioProps> = props => {
   const posts = props.data.posts.edges;
   return (
-    <Layout>
+    <Layout showSidebarOnMobile={false}>
       <SEO title="Portfolio" keywords={[`gatsby`, `node`, `react`, `javascript`, `php`, `silverstripe`]} />
-      <h1>What I have worked on</h1>
+      <Heading heading="What I've worked on" />
       {posts.map(({ node }, i: number) => (
         <Link to={`/portfolio/${node.frontmatter.slug}`} key={i} className="link">
           <div className="post-list">

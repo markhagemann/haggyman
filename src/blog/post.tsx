@@ -3,6 +3,7 @@ import Img from 'gatsby-image';
 import * as React from 'react';
 import SEO from '../common/components/SEO';
 import Layout from '../common/components/UI/Layout';
+import Heading from '../common/components/Heading';
 
 interface PostTemplateProps {
   data: {
@@ -32,7 +33,7 @@ const BlogPostTemplate: React.SFC<PostTemplateProps> = ({ data }) => {
     <Layout>
       <SEO title={title} keywords={post.frontmatter.tags} />
       <div className="font-sans">
-        <h1 className="text-blue-lighter mb-5">{title}</h1>
+        <Heading heading={title} />
         {post.frontmatter.postImage && <Img fluid={post.frontmatter.postImage.childImageSharp.fluid} />}
         <div className="md-post" dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>

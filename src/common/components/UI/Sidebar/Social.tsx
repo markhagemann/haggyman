@@ -3,42 +3,45 @@ import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-
 
 interface SocialProps {}
 
+const linkClass = 'no-underline border-0 p-2';
+const iconClass = 'hover:text-blue-lighter';
+
 const Social: React.SFC<SocialProps> = () => {
   return (
     <div className="border-t border-gradient-r-blue-custom py-3 mt-3">
       <ul className="flex justify-center list-reset text-xl">
         <li>
-          <a className="no-underline border-0 p-2" href="https://github.com/markhagemann">
+          <a className={linkClass} href="https://github.com/markhagemann">
             <span>
-              <FaGithub className="hover:text-blue-lighter" />
+              <FaGithub className={iconClass} />
             </span>
           </a>
         </li>
         <li>
-          <a className="no-underline border-0 p-2" href="https://twitter.com/markhagemann1">
+          <a className={linkClass} href="https://twitter.com/markhagemann1">
             <span>
-              <FaTwitter className="hover:text-blue-lighter" />
+              <FaTwitter className={iconClass} />
             </span>
           </a>
         </li>
         <li>
-          <a className="no-underline border-0 p-2" href="https://instagram.com/marko___777">
+          <a className={linkClass} href="https://instagram.com/marko___777">
             <span>
-              <FaInstagram className="hover:text-blue-lighter" />
+              <FaInstagram className={iconClass} />
             </span>
           </a>
         </li>
         <li>
-          <a className="no-underline border-0 p-2" href="https://www.linkedin.com/in/mark-hagemann-64a367158/">
+          <a className={linkClass} href="https://www.linkedin.com/in/mark-hagemann-64a367158/">
             <span>
-              <FaLinkedin className="hover:text-blue-lighter" />
+              <FaLinkedin className={iconClass} />
             </span>
           </a>
         </li>
         <li>
-          <a className="no-underline border-0 p-2" href="mailto:mhagemann09@gmail.com">
+          <a className={linkClass} href="mailto:mhagemann09@gmail.com">
             <span>
-              <FaEnvelope className="hover:text-blue-lighter" />
+              <FaEnvelope className={iconClass} />
             </span>
           </a>
         </li>

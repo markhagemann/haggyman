@@ -1,5 +1,6 @@
 import { graphql, Link } from 'gatsby';
 import React from 'react';
+import Heading from '../common/components/Heading';
 import SEO from '../common/components/SEO';
 import Layout from '../common/components/UI/Layout';
 
@@ -27,7 +28,7 @@ const BlogIndex: React.SFC<BlogProps> = props => {
   return (
     <Layout>
       <SEO title="Blog" keywords={[`programming`, `web development`, `javascript`]} />
-      <h1 className="mb-5">Some of my thoughts</h1>
+      <Heading heading="Some of my thoughts" />
       {posts.map(({ node }, i: number) => (
         <Link to={`/blog/${node.frontmatter.slug}`} key={i} className="link">
           <div className="post-list">

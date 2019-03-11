@@ -1,13 +1,14 @@
 import React from 'react';
+import Heading from '../common/components/Heading';
 import SEO from '../common/components/SEO';
 import Layout from '../common/components/UI/Layout';
 
 interface IndexProps {}
 
 const IndexPage: React.SFC<IndexProps> = () => (
-  <Layout>
+  <Layout showSidebarOnMobile={true}>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1 className="mb-5">Welcome to Haggyman!</h1>
+    <Heading heading="Welcome To Haggyman!" />
     <p>
       My name is Mark Hagemann but I also commonly go by "Haggy" or the "Haggyman". Currently based in Melbourne, working for{' '}
       <a href="https://www.ltnetwork.co">LT Network</a> / <a href="https://digitalstack.io"> Digital Stack</a>. I am a software developer
