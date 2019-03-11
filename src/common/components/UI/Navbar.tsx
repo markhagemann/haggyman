@@ -8,7 +8,7 @@ const linkClass = 'text-blue-dark hover:text-blue-lighter no-underline border-0'
 
 const Navbar: React.SFC<NavbarProps> = () => {
   return (
-    <div className="fixed w-full z-10 p-5 justify-center flex mb-8 font-sans text-xl md:pl-335 md:justify-start">
+    <div className="bg-blue-custom-transparent border-b border-blue-dark fixed w-full z-10 p-5 justify-center flex mb-8 font-sans text-xl md:pl-335 md:justify-start">
       <ul className="list-reset flex">
         <li className="mr-6">
           <Link to="/" activeClassName={activeLinkClass} className={linkClass}>

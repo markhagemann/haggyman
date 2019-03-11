@@ -30,7 +30,8 @@ The importance of having someone review your code cannot be repeated enough.
 3. Helps with consistency and legibility
 4. Helps share knowledge
 
-Don't take criticism of your code as criticism of you personally.
+Don't take criticism of your code as criticism of you personally. You stand to gain a lot more by
+allowing others to review your code, regardless of whether you completely agree with their comments.
 
 ## Aim to be a specialist first
 
@@ -42,5 +43,6 @@ is highly encouraged.
 
 ## There are great resources and tools out there to help
 
-1. Podcasts such as [Syntax.fm](https://syntax.fm/) is one of my favourites and they cover very relevant topics.
+1. Podcasts such as [Syntax.fm](https://syntax.fm/) is one of my favourites and they cover very relevant topics
 2. Learning resources such as [Udemy](https://udemy.com), [Laracasts](https://laracasts.com) and [freeCodeCamp](https://www.freecodecamp.org/)
+3. Meetups through websites such as [Meetup](https://www.meetup.com) as well as conferences

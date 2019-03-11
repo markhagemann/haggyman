@@ -95,6 +95,7 @@ let colors = {
   'teal-lighter': '#a0f0ed',
   'teal-lightest': '#e8fffe',
 
+  'blue-custom-transparent': 'rgba(8, 31, 45, 0.5)',
   'blue-dark-custom-border': '#0a3557',
   'blue-dark-custom': '#12223c',
   'blue-darkest': '#12283a',
