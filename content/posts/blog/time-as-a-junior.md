@@ -8,9 +8,7 @@ category: 'thoughts'
 tags: ['junior', 'developer', 'learning']
 ---
 
-## Imposter syndrome is real
-
-But it's entirely understandable to feel that way when you start out. Having the feeling
+Imposter syndrome is real, but it's entirely understandable to feel that way when you start out. Having the feeling
 that you don't know enough, will likely end up motivating you to become a much better developer.
 It also means that you feel you have a lot to learn from your colleagues, which is an excellent
 position to be in.

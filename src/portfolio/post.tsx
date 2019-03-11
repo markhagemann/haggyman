@@ -1,5 +1,4 @@
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
 import * as React from 'react';
 import Heading from '../common/components/Heading';
 import SEO from '../common/components/SEO';
@@ -8,18 +7,9 @@ import Layout from '../common/components/UI/Layout';
 interface PostTemplateProps {
   data: {
     post: {
-      // siteMetadata?: SiteMetadata;
       frontmatter: {
         title: string;
         tags: string[];
-        postImage?: {
-          childImageSharp: {
-            original: {
-              src: string;
-            };
-            fluid: any; // TODO: Get actual type
-          };
-        };
       };
       html: string;
     };
@@ -27,6 +17,7 @@ interface PostTemplateProps {
 }
 
 const PortfolioPostTemplate: React.SFC<PostTemplateProps> = ({ data }) => {
+  console.log(data);
   const post = data.post;
   const { title } = post.frontmatter;
   return (
@@ -34,7 +25,6 @@ const PortfolioPostTemplate: React.SFC<PostTemplateProps> = ({ data }) => {
       <SEO title={title} keywords={post.frontmatter.tags} />
       <div className="font-sans">
         <Heading heading={title} />
-        {post.frontmatter.postImage && <Img fluid={post.frontmatter.postImage.childImageSharp.fluid} />}
         <div className="md-post" dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
@@ -55,16 +45,6 @@ export const query = graphql`
         description
         slug
         tags
-        postImage {
-          childImageSharp {
-            original {
-              src
-            }
-            fluid(maxWidth: 1080) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     }
     date: markdownRemark(frontmatter: { slug: { eq: $slug } }) {

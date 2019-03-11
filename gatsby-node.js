@@ -75,7 +75,7 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 
   const getPortfolioPosts = makeRequest(graphql, portfolioPostsQuery).then(result => {
-    createHolderPageAndPosts('portfolio', result.data.allPortfolioPosts, 5, createPage);
+    createHolderPageAndPosts('portfolio', result.data.allPortfolioPosts, 10, createPage);
   });
 
   // Queries for articles and authors nodes to use in creating pages.

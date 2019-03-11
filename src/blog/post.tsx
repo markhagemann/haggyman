@@ -1,25 +1,21 @@
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
 import * as React from 'react';
 import SEO from '../common/components/SEO';
 import Layout from '../common/components/UI/Layout';
-import Heading from '../common/components/Heading';
 
 interface PostTemplateProps {
   data: {
     post: {
       // siteMetadata?: SiteMetadata;
+      fields: {
+        readingTime: {
+          text: string;
+        };
+      };
       frontmatter: {
         title: string;
         tags: string[];
-        postImage?: {
-          childImageSharp: {
-            original: {
-              src: string;
-            };
-            fluid: any; // TODO: Get actual type
-          };
-        };
+        date: string;
       };
       html: string;
     };
@@ -33,8 +29,12 @@ const BlogPostTemplate: React.SFC<PostTemplateProps> = ({ data }) => {
     <Layout>
       <SEO title={title} keywords={post.frontmatter.tags} />
       <div className="font-sans">
-        <Heading heading={title} />
-        {post.frontmatter.postImage && <Img fluid={post.frontmatter.postImage.childImageSharp.fluid} />}
+        <h1 className="mb-1"> {title} </h1>
+        <div className="mb-8">
+          <span className="text-blue-dark">
+            {post.frontmatter.date} - {post.fields.readingTime.text}
+          </span>
+        </div>
         <div className="md-post" dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
@@ -47,6 +47,11 @@ export const query = graphql`
   query($slug: String!) {
     post: markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
+      fields {
+        readingTime {
+          text
+        }
+      }
       frontmatter {
         date(formatString: "MMM Do, YYYY")
         dateOriginal: date
@@ -55,16 +60,6 @@ export const query = graphql`
         description
         slug
         tags
-        postImage {
-          childImageSharp {
-            original {
-              src
-            }
-            fluid(maxWidth: 1080) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     }
     date: markdownRemark(frontmatter: { slug: { eq: $slug } }) {

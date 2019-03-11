@@ -86,12 +86,8 @@ module.exports = {
               maxWidth: 590
             }
           },
-          {
-            resolve: `gatsby-transformer-remark`,
-            options: {
-              plugins: [`gatsby-remark-prismjs`]
-            }
-          },
+          'gatsby-remark-prismjs',
+          'gatsby-remark-reading-time',
           {
             resolve: `gatsby-remark-responsive-image`,
             options: {

@@ -11,9 +11,8 @@ interface LayoutProps {
 const containerClass: (props: LayoutProps) => string = props => {
   const showSidebarOnMobile = !!props.showSidebarOnMobile ? true : false;
   return classNames({
-    'container mx-auto max-w-650 md:pt-24 px-5 md:mx-0 md:px-8 md:ml-300': true,
-    'mt-16': showSidebarOnMobile,
-    'mt-20': !showSidebarOnMobile
+    'container mx-auto max-w-650 px-5 my-8 md:mt-16 md:text-left md:pt-24 md:mx-0 md:px-8 md:ml-300': true,
+    'mt-32': !showSidebarOnMobile
   });
 };
 

@@ -9,7 +9,7 @@ interface SidebarProps {
 
 const mobileClass: (props: SidebarProps) => string = props => {
   return classNames({
-    'md:w-300 md:fixed md:h-screen flex-col justify-center px-5 mt-16 md:mt-0 md:border-r border-gradient-b-blue-custom': true,
+    'border-gradient-b-blue-custom flex-col justify-center px-5 mt-16 md:w-300 md:fixed md:h-screen md:mt-0 md:border-r': true,
     'hidden md:flex': !props.showOnMobile,
     flex: props.showOnMobile
   });

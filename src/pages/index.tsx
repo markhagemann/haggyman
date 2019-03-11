@@ -8,7 +8,7 @@ interface IndexProps {}
 const IndexPage: React.SFC<IndexProps> = () => (
   <Layout showSidebarOnMobile={true}>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Heading heading="Welcome To Haggyman!" />
+    <Heading centerOnMobile={true} heading="Welcome To Haggyman!" />
     <p>
       My name is Mark Hagemann but I also commonly go by "Haggy" or the "Haggyman". Currently based in Melbourne, working for{' '}
       <a href="https://www.ltnetwork.co">LT Network</a> / <a href="https://digitalstack.io"> Digital Stack</a>. I am a software developer
