@@ -2,6 +2,7 @@
 
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://www.haggyman.com`,
     title: `Haggyman`,
     description: `Portfolio and blog by Mark Hagemann.`,
     author: `Mark Hagemann`
@@ -24,6 +25,7 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
