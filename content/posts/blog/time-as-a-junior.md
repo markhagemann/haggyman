@@ -18,8 +18,8 @@ position to be in.
 As a junior you're expected to ask questions and it would probably raise concern if you weren't.
 When asking the question, try to fully grasp it so that you don't need to ask it again, otherwise write it
 down for later use. When you're told that something is best practice - find out why and don't be afraid to
-question it. Without people questioning best practices we wouldn't end up with things such as [react](https://reactjs.org)
-and [tailwind](https://tailwindcss.com/docs/what-is-tailwind).
+question it. Without people questioning best practices we wouldn't end up with things such as [React](https://reactjs.org)
+and [Tailwind](https://tailwindcss.com/docs/what-is-tailwind).
 
 ## Code reviews help... a lot
 
