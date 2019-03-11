@@ -1,3 +1,6 @@
-http://haggymann.com/* http://haggyman.com/:splat 301!
-http://haggyman.netlify.com/* http://haggyman.com/:splat 301!
-http://www.haggymann.com/* http://haggyman.com/:splat 301!
+# Redirect domain aliases to primary domain
+https://haggymann.com/* https://haggyman.com/:splat 301!
+https://www.haggymann.com/* https://haggyman.com/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://haggyman.netlify.com/* https://haggyman.com/:splat 301!
