@@ -17,7 +17,7 @@ const Profile = () => (
     `}
     render={data => (
       <div style={{ maxWidth: '175px' }} className="mx-auto">
-        <Img className="border-2 border-blue-darker rounded-full" fixed={data.placeholderImage.childImageSharp.fixed} />
+        <Img className="border-2 border-blue-darker" fixed={data.placeholderImage.childImageSharp.fixed} />
       </div>
     )}
   />

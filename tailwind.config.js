@@ -548,6 +548,7 @@ module.exports = {
 
   minWidth: {
     '0': '0',
+    '300': '300px',
     full: '100%'
   },
 
@@ -598,7 +599,8 @@ module.exports = {
     '3xl': '80rem',
     '4xl': '90rem',
     '5xl': '100rem',
-    full: '100%'
+    full: '100%',
+    '650': '650px'
   },
 
   /*
@@ -653,7 +655,7 @@ module.exports = {
     '20': '5rem',
     '24': '6rem',
     '32': '8rem',
-    '310': '310px'
+    '335': '335px'
   },
 
   /*
@@ -689,7 +691,8 @@ module.exports = {
     '16': '4rem',
     '20': '5rem',
     '24': '6rem',
-    '32': '8rem'
+    '32': '8rem',
+    '300': '300px'
   },
 
   /*
@@ -927,6 +930,18 @@ module.exports = {
     require('tailwindcss/plugins/container')({
       // center: true,
       // padding: '1rem',
+    }),
+    require('tailwindcss-border-gradients')({
+      variants: ['responsive'],
+      directions: {
+        t: 'to top',
+        r: 'to right',
+        b: 'to bottom',
+        l: 'to left'
+      },
+      gradients: {
+        'blue-custom': ['#12223c', '#0a3557', '#12223c']
+      }
     })
   ],
 

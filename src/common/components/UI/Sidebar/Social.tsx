@@ -5,7 +5,7 @@ interface SocialProps {}
 
 const Social: React.SFC<SocialProps> = () => {
   return (
-    <div className="border-t border-blue-dark-custom-border py-3 mt-3">
+    <div className="border-t border-gradient-r-blue-custom py-3 mt-3">
       <ul className="flex justify-center list-reset text-xl">
         <li>
           <a className="no-underline border-0 p-2" href="https://github.com/markhagemann">

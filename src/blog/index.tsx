@@ -26,7 +26,7 @@ const BlogIndex: React.SFC<BlogProps> = props => {
   const posts = props.data.posts.edges;
   return (
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <SEO title="Blog" keywords={[`programming`, `web development`, `javascript`]} />
       <h1 className="mb-5">Some of my thoughts</h1>
       {posts.map(({ node }, i: number) => (
         <Link to={`/blog/${node.frontmatter.slug}`} key={i} className="link">

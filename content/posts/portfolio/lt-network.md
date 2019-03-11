@@ -1,6 +1,6 @@
 ---
 type: 'portfolio'
-title: 'LT Network Gatsby Site'
+title: 'LT Network - Gatsby'
 description: 'An agency site built using Gatsby'
 date: '2019-01-07'
 slug: 'lt-network'

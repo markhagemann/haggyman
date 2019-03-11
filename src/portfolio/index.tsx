@@ -26,7 +26,7 @@ const PortfolioIndex: React.SFC<PortfolioProps> = props => {
   const posts = props.data.posts.edges;
   return (
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <SEO title="Portfolio" keywords={[`gatsby`, `node`, `react`, `javascript`, `php`, `silverstripe`]} />
       <h1>What I have worked on</h1>
       {posts.map(({ node }, i: number) => (
         <Link to={`/portfolio/${node.frontmatter.slug}`} key={i} className="link">

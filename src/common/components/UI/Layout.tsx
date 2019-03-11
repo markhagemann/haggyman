@@ -23,18 +23,11 @@ const Layout: React.SFC<LayoutProps> = props => {
       `}
       render={data => (
         <main className="min-h-screen max-h-full bg-cover bg-blue-dark-custom text-grey-light font-sans">
-          <div className="container mx-auto px-1 md:mx-0 md:px-8">
-            <Navbar />
-            <div className="md:flex py-20">
-              <Sidebar hideOnMobile={hideSidebarOnMobile ? true : false} siteTitle={data.site.siteMetadata.title} />
-              <div className="px-5 pt-10">
-                {children}
-                {/* <footer>
-              © {new Date().getFullYear()}, Built with
-              {` `}
-              <a href="https://www.gatsbyjs.org">Gatsby</a>
-            </footer> */}
-              </div>
+          <Navbar />
+          <div className="flex flex-col md:flex-row relative">
+            <Sidebar hideOnMobile={hideSidebarOnMobile ? true : false} siteTitle={data.site.siteMetadata.title} />
+            <div className="container mx-auto max-w-650 py-16 md:pt-32 px-5 md:mx-0 md:px-8 md:ml-300">
+              <div>{children}</div>
             </div>
           </div>
         </main>

@@ -11,13 +11,18 @@
  */
 @tailwind preflight;
 
+p {
+  font-size: 17px;
+  line-height: 1.4em;
+}
+
 b,
 strong {
   font-weight: 500;
 }
 
-h1 {
-  font-size: 1.9em;
+h2 {
+  font-size: 1.6em;
 }
 
 a {
@@ -55,10 +60,6 @@ a:hover {
 .md-post ul,
 .md-post ol {
   margin-bottom: 0.75em;
-}
-
-.md-post {
-  line-height: 1.5em;
 }
 
 /**

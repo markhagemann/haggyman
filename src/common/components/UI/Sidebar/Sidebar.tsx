@@ -11,7 +11,7 @@ interface SidebarProps {
 const mobileClass: (props: SidebarProps) => string = props => {
   return classNames({
     // 'md:w-300 md:h-screen flex flex-col justify-center px-5 md:border-r border-blue-dark-custom-border': true,
-    'md:w-300 md:h-screen flex flex-col justify-center px-5': true,
+    'md:w-300 md:fixed md:h-screen flex flex-col justify-center px-5 mt-16 md:mt-0 md:border-r border-gradient-b-blue-custom': true,
     'sm:d-none': props.hideOnMobile
   });
 };

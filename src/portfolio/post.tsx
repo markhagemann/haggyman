@@ -10,6 +10,7 @@ interface PostTemplateProps {
       // siteMetadata?: SiteMetadata;
       frontmatter: {
         title: string;
+        tags: string[];
         postImage?: {
           childImageSharp: {
             original: {
@@ -29,7 +30,7 @@ const PortfolioPostTemplate: React.SFC<PostTemplateProps> = ({ data }) => {
   const { title } = post.frontmatter;
   return (
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <SEO title={title} keywords={post.frontmatter.tags} />
       <div className="font-sans">
         <h1 className="text-blue-lighter mb-5">{title}</h1>
         {post.frontmatter.postImage && <Img fluid={post.frontmatter.postImage.childImageSharp.fluid} />}
@@ -52,6 +53,7 @@ export const query = graphql`
         title
         description
         slug
+        tags
         postImage {
           childImageSharp {
             original {
