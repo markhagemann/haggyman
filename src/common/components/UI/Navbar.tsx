@@ -4,7 +4,7 @@ import React from 'react';
 interface NavbarProps {}
 
 const activeLinkClass = 'border-b text-blue-lighter border-blue-lighter hover:border-blue-lighter';
-const linkClass = 'text-blue-dark hover:text-blue-lighter no-underline border-0';
+const linkClass = 'text-blue-light hover:text-blue-lighter no-underline border-0';
 
 const Navbar: React.SFC<NavbarProps> = () => {
   return (
