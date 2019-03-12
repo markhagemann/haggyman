@@ -43,6 +43,28 @@ is highly encouraged.
 
 ## There are great resources and tools out there to help
 
+Tools such as TSLint or ESLint will can improve your code quality and productivity immensely. Though you may
+find some of the errors a little frustrating at first, if you take the time to research why those
+warnings and errors are displayed (e.g. when using Airbnb's ESLint config), it will make you more aware
+of some common pitfalls. After that as a team / individual you can make your own mind up as to whether you agree with having that option as an error / warning.
+
+In addition to that, here are a few other things I recommend looking into:
+
 1. Podcasts such as [Syntax.fm](https://syntax.fm/) is one of my favourites and they cover very relevant topics
 2. Learning resources such as [Udemy](https://udemy.com), [Laracasts](https://laracasts.com) and [freeCodeCamp](https://www.freecodecamp.org/)
 3. Meetups through websites such as [Meetup](https://www.meetup.com) as well as conferences
+4. Management tools such as [Todoist](https://todoist.com) and [Trello](https://trello.com)
+
+## Try to build things you'd personally find useful
+
+Finding motivation outside of work can be tough sometimes and thinking of ideas outside of
+a to-do list or a weather app may not come to you that easy. If you can think of a
+hobby or interest of yours that may benefit from your knowledge of it as well as programming,
+you will likely be a lot more driven to complete it.
+
+## Embrace being confused about problems
+
+Once you begin to work on something that you know all the answers to and have done it a bunch of
+times before... your days tend to go a lot slower. Take a can-do attitude to problems that are
+thrown your way, often after breaking them down into smaller pieces you'll be surprised how
+feasible it actually is.

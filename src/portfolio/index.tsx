@@ -38,8 +38,14 @@ const PortfolioIndex: React.SFC<PortfolioProps> = props => {
   const posts = props.data.posts.edges;
   return (
     <Layout showSidebarOnMobile={false}>
-      <SEO title="Portfolio" keywords={[`gatsby`, `node`, `react`, `javascript`, `php`, `silverstripe`]} />
+      <SEO title="Portfolio" keywords={[`portfolio`, `web developer`, `gatsby`, `node`, `react`, `javascript`, `php`, `silverstripe`]} />
       <Heading centerOnMobile={true} heading="What I've worked on" />
+      <p className="italic text-lg">
+        {' '}
+        I am passionate about anything I have the privilege to work on. Solving big problems is just as satisfying as making something
+        pretty.
+      </p>
+      <hr className="border-b border-gradient-r-blue-custom my-8" />
       {posts.map(({ node }, i: number) => (
         <Preview
           title={node.frontmatter.title}
