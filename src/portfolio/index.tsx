@@ -16,6 +16,7 @@ interface Edge {
       date: string;
       title: string;
       slug: string;
+      externalLink: string;
       postImage: {
         childImageSharp: {
           fluid: any;
@@ -46,6 +47,7 @@ const PortfolioIndex: React.SFC<PortfolioProps> = props => {
           readingTime={node.fields.readingTime.text}
           slug={node.frontmatter.slug}
           date={node.frontmatter.date}
+          externalLink={node.frontmatter.externalLink}
           key={i}
         />
       ))}
@@ -75,6 +77,7 @@ export const portfolioListQuery = graphql`
             date(formatString: "MMM YYYY")
             category
             description
+            externalLink
             slug
             postImage {
               childImageSharp {

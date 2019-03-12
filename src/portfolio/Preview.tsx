@@ -8,18 +8,20 @@ interface PreviewProps {
   readingTime: string;
   date: string;
   slug: string;
+  externalLink: string;
 }
 
 const Preview: React.SFC<PreviewProps> = (props: PreviewProps) => {
   return (
     <div className="my-12">
       <Link to={`/portfolio/${props.slug}`} className="text-grey-light hover:text-blue-lighter">
-        <h2 className="mb-1"> {props.title} </h2>
+        <h2 className="mb-2"> {props.title} </h2>
       </Link>
-      <div className="mb-3">
+      <div className="mb-5 font-exo">
         <span className="text-blue-dark">
-          {props.date} - {props.readingTime}
+          {props.date} - {props.readingTime} -
         </span>
+        <a href={props.externalLink}> {props.externalLink} </a>
       </div>
       {props.postImageFluid && (
         <Link to={`/portfolio/${props.slug}`} className="text-grey-light hover:text-blue-lighter">
