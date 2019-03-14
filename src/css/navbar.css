@@ -1,0 +1,35 @@
+#nav a:before,
+#nav a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+#nav a:before {
+  bottom: -1px;
+  height: 1px;
+  width: 0%;
+  content: '';
+  background-color: #6cb2eb;
+}
+#nav .active:before {
+  background-color: #bcdefa;
+}
+#nav a:after {
+  left: 0;
+  top: 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+#nav a:hover:before,
+#nav .active a:before {
+  opacity: 1;
+  width: 100%;
+}
+#nav a:hover:after,
+#nav .active a:after {
+  max-width: 100%;
+}

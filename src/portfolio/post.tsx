@@ -9,6 +9,7 @@ interface PostTemplateProps {
     post: {
       frontmatter: {
         title: string;
+        description: string;
         tags: string[];
       };
       html: string;
@@ -22,7 +23,7 @@ const PortfolioPostTemplate: React.SFC<PostTemplateProps> = ({ data }) => {
   const { title } = post.frontmatter;
   return (
     <Layout>
-      <SEO title={title} keywords={post.frontmatter.tags} />
+      <SEO title={title} keywords={post.frontmatter.tags} description={post.frontmatter.description} />
       <div className="font-sans">
         <Heading heading={title} />
         <div className="md-post" dangerouslySetInnerHTML={{ __html: post.html }} />

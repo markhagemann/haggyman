@@ -16,6 +16,7 @@ interface PostTemplateProps {
         title: string;
         tags: string[];
         date: string;
+        description: string;
       };
       html: string;
     };
@@ -27,7 +28,7 @@ const BlogPostTemplate: React.SFC<PostTemplateProps> = ({ data }) => {
   const { title } = post.frontmatter;
   return (
     <Layout>
-      <SEO title={title} keywords={post.frontmatter.tags} />
+      <SEO title={title} keywords={post.frontmatter.tags} description={post.frontmatter.description} />
       <div className="font-sans">
         <h1 className="mb-1"> {title} </h1>
         <div className="mb-8">

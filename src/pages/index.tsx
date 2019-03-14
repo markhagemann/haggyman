@@ -16,8 +16,8 @@ const IndexPage: React.SFC<IndexProps> = () => (
     </p>
     <br />{' '}
     <p>
-      My background started with a focus in PHP frameworks such as Laravel, SilverStripe and WordPress. These days I am working with React,
-      Angular and Node. I also enjoy learning more about DevOps and design.
+      My background began with PHP frameworks such as Laravel, SilverStripe and WordPress. These days I am working with React, Angular and
+      Node. I also enjoy learning more about DevOps and design.
     </p>
     <br />
     <p>
