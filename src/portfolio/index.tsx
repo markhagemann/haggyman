@@ -40,7 +40,7 @@ const PortfolioIndex: React.SFC<PortfolioProps> = props => {
     <Layout showSidebarOnMobile={false}>
       <SEO title="Portfolio" keywords={[`portfolio`, `web developer`, `gatsby`, `node`, `react`, `javascript`, `php`, `silverstripe`]} />
       <Heading centerOnMobile={true} heading="What I've worked on" />
-      <p className="italic text-lg">
+      <p className="text-center italic text-lg md:text-left">
         {' '}
         I am passionate about anything I have the privilege to work on. Solving big problems is just as satisfying as making something
         pretty.

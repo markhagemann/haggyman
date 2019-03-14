@@ -17,7 +17,7 @@ const Preview: React.SFC<PreviewProps> = (props: PreviewProps) => {
       </Link>
       <div className="mb-3 font-exo">
         <span className="text-blue-dark">
-          {props.date} - {props.readingTime}
+          {props.date} &raquo; {props.readingTime}
         </span>
       </div>
       <p className="mb-3">{props.excerpt}</p>
