@@ -18,7 +18,6 @@ interface PostTemplateProps {
 }
 
 const PortfolioPostTemplate: React.SFC<PostTemplateProps> = ({ data }) => {
-  console.log(data);
   const post = data.post;
   const { title } = post.frontmatter;
   return (

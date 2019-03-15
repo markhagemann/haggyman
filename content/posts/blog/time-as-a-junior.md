@@ -2,7 +2,7 @@
 type: 'blog'
 title: 'Things I learned as a junior'
 description: 'What my experiences as a junior developer has taught me'
-date: '2019-11-03'
+date: '2019-03-11'
 slug: 'learnings-as-a-junior'
 category: 'thoughts'
 tags: ['junior', 'developer', 'learning']

@@ -3,7 +3,7 @@ import React from 'react';
 import Heading from '../common/components/Heading';
 import SEO from '../common/components/SEO';
 import Layout from '../common/components/UI/Layout';
-import Preview from './Preview';
+import Preview from './components/Preview';
 
 interface Edge {
   node: {
