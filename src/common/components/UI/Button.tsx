@@ -14,8 +14,8 @@ const Button: React.SFC<ButtonProps> = (props: ButtonProps) => {
     buttonClass += ' w-full';
   }
   const handleClick = (e: React.FormEvent<HTMLButtonElement>) => {
-    e.preventDefault();
     if (props.onClick) {
+      e.preventDefault();
       return props.onClick();
     }
   };
