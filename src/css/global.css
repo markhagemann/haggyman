@@ -28,6 +28,11 @@ a {
   text-decoration: none;
 }
 
+button,
+input {
+  transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out;
+}
+
 a:hover {
   border-bottom-color: transparent;
 }
@@ -36,6 +41,15 @@ a:hover {
   margin-top: 1em;
   margin-bottom: 1.5em;
 }
+
+/**
+  * This injects any component classes registered by plugins.
+  *
+  * If using `postcss-import`, use this import instead:
+  *
+  * @import "tailwindcss/components";
+  */
+@tailwind components;
 
 .md-post h1,
 .md-post h2,
@@ -53,14 +67,11 @@ a:hover {
   margin-bottom: 1em;
 }
 
-/**
-  * This injects any component classes registered by plugins.
-  *
-  * If using `postcss-import`, use this import instead:
-  *
-  * @import "tailwindcss/components";
-  */
-@tailwind components;
+/* This is a fix for tailwindcss-bulma-modals */
+.modal-close::after {
+  height: 50%;
+  width: 2px;
+}
 
 /**
   * Here you would add any of your custom component classes; stuff that you'd

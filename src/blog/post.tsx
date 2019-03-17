@@ -1,12 +1,12 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
+import Post from '../common/components/post/Post';
 import SEO from '../common/components/SEO';
 import Layout from '../common/components/UI/Layout';
 
 interface PostTemplateProps {
   data: {
     post: {
-      // siteMetadata?: SiteMetadata;
       fields: {
         readingTime: {
           text: string;
@@ -29,15 +29,7 @@ const BlogPostTemplate: React.SFC<PostTemplateProps> = ({ data }) => {
   return (
     <Layout>
       <SEO title={title} keywords={post.frontmatter.tags} description={post.frontmatter.description} />
-      <div className="font-sans">
-        <h1 className="mb-1"> {title} </h1>
-        <div className="mb-8">
-          <span className="text-blue-dark">
-            {post.frontmatter.date} - {post.fields.readingTime.text}
-          </span>
-        </div>
-        <div className="md-post" dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
+      <Post title={title} date={post.frontmatter.date} readingTime={post.fields.readingTime.text} html={post.html} />
     </Layout>
   );
 };

@@ -10314,6 +10314,10 @@ tailwindcss-border-gradients@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/tailwindcss-border-gradients/-/tailwindcss-border-gradients-1.0.1.tgz#79afea7bfb4995169ee343eee59732c73a432df6"
 
+tailwindcss-bulma-modals@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/tailwindcss-bulma-modals/-/tailwindcss-bulma-modals-1.0.2.tgz#64cad5d0477283f09b80aba6ac5e2fa49381fde6"
+
 tailwindcss@^0.7.4:
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-0.7.4.tgz#fb7926821d42eacdc12e6621a49d21f37a3ff9e9"

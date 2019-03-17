@@ -1,6 +1,7 @@
 import React from 'react';
-import Heading from '../common/components/Heading';
+import ContactMe from '../common/components/ContactMe';
 import SEO from '../common/components/SEO';
+import Heading from '../common/components/UI/Heading';
 import Layout from '../common/components/UI/Layout';
 
 interface IndexProps {}
@@ -8,9 +9,9 @@ interface IndexProps {}
 const IndexPage: React.SFC<IndexProps> = () => (
   <Layout showSidebarOnMobile={true}>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Heading centerOnMobile={true} heading="Welcome to Haggyman!" />
+    <Heading centerOnMobile={true} heading="Welcome to Haggyman" />
     <p>
-      My name is Mark Hagemann but I also commonly go by "Haggy" or the "Haggyman". Currently based in Melbourne, working for{' '}
+      My name is Mark Hagemann but I also commonly go by "Haggy" or "Haggyman". Currently based in Melbourne, working for{' '}
       <a href="https://www.ltnetwork.co">LT Network</a> / <a href="https://digitalstack.io"> Digital Stack</a>. I am a software developer
       with a focus on the web, and a curiosity for game development.{' '}
     </p>
@@ -25,6 +26,9 @@ const IndexPage: React.SFC<IndexProps> = () => (
       When I'm not coding something, you will usually find me trying to avoid being choked out by someone in Brazilian Jiu-Jitsu, watching
       movies or playing video games with friends.
     </p>
+    <div className="md:text-left">
+      <ContactMe />
+    </div>
   </Layout>
 );
 

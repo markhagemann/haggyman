@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-import Heading from '../common/components/Heading';
+import Heading from '../common/components/UI/Heading';
 import SEO from '../common/components/SEO';
 import Layout from '../common/components/UI/Layout';
 import Preview from './components/Preview';
@@ -15,6 +15,7 @@ interface Edge {
     frontmatter: {
       date: string;
       title: string;
+      company: string;
       slug: string;
       externalLink: string;
       postImage: {
@@ -39,11 +40,10 @@ const PortfolioIndex: React.SFC<PortfolioProps> = props => {
   return (
     <Layout showSidebarOnMobile={false}>
       <SEO title="Portfolio" keywords={[`portfolio`, `web developer`, `gatsby`, `node`, `react`, `javascript`, `php`, `silverstripe`]} />
-      <Heading centerOnMobile={true} heading="What I've worked on" />
-      <p className="text-center italic text-lg md:text-left">
+      <Heading centerOnMobile={true} heading="Some projects I've worked on" />
+      <p className="text-center text-lg md:text-left">
         {' '}
-        I am passionate about anything I have the privilege to work on. Solving big problems is just as satisfying as making something
-        pretty.
+        I am passionate about anything I end up working on. Solving big problems is just as satisfying as making something pretty.
       </p>
       <hr className="border-b border-gradient-r-blue-custom my-8" />
       {posts.map(({ node }, i: number) => (
@@ -81,8 +81,7 @@ export const portfolioListQuery = graphql`
           frontmatter {
             title
             date(formatString: "MMM YYYY")
-            category
-            description
+            company
             externalLink
             slug
             postImage {

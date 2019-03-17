@@ -31,7 +31,7 @@ const Layout: React.SFC<LayoutProps> = props => {
         }
       `}
       render={() => (
-        <main className="min-h-screen max-h-full bg-cover bg-blue-dark-custom text-grey-light font-sans">
+        <main className="min-h-screen max-h-full bg-cover bg-blue-darker-custom text-grey-light font-titillium">
           <Navbar />
           <div className="flex flex-col md:flex-row relative">
             <Sidebar showOnMobile={showSidebarOnMobile ? true : false} />

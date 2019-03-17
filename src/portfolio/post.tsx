@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
-import Heading from '../common/components/Heading';
+import Post from '../common/components/post/Post';
 import SEO from '../common/components/SEO';
 import Layout from '../common/components/UI/Layout';
 
@@ -8,9 +8,16 @@ interface PostTemplateProps {
   data: {
     post: {
       frontmatter: {
+        date: string;
         title: string;
         description: string;
         tags: string[];
+        externalLink: string;
+      };
+      fields: {
+        readingTime: {
+          text: string;
+        };
       };
       html: string;
     };
@@ -23,10 +30,13 @@ const PortfolioPostTemplate: React.SFC<PostTemplateProps> = ({ data }) => {
   return (
     <Layout>
       <SEO title={title} keywords={post.frontmatter.tags} description={post.frontmatter.description} />
-      <div className="font-sans">
-        <Heading heading={title} />
-        <div className="md-post" dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
+      <Post
+        title={title}
+        date={post.frontmatter.date}
+        readingTime={post.fields.readingTime.text}
+        html={post.html}
+        externalLink={post.frontmatter.externalLink}
+      />
     </Layout>
   );
 };
@@ -38,13 +48,18 @@ export const query = graphql`
     post: markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        date(formatString: "MMM Do, YYYY")
+        date(formatString: "MMM YYYY")
         dateOriginal: date
-        category
         title
         description
         slug
         tags
+        externalLink
+      }
+      fields {
+        readingTime {
+          text
+        }
       }
     }
     date: markdownRemark(frontmatter: { slug: { eq: $slug } }) {

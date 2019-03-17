@@ -1,5 +1,5 @@
 import React from 'react';
-import Heading from '../common/components/Heading';
+import Heading from '../common/components/UI/Heading';
 import SEO from '../common/components/SEO';
 import Layout from '../common/components/UI/Layout';
 

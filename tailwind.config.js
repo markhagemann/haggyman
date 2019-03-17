@@ -96,10 +96,12 @@ let colors = {
   'teal-lightest': '#e8fffe',
 
   'blue-custom-transparent': 'rgba(8, 31, 45, 0.5)',
-  'blue-dark-custom-border': '#0a3557',
-  'blue-dark-custom': '#12223c',
+  'blue-darkest-custom': '#00182c',
   'blue-darkest': '#12283a',
+  'blue-darker-custom': '#12223c',
+  'blue-darker-alt': '#1d345b',
   'blue-darker': '#1c3d5a',
+  'blue-dark-custom-border': '#0a3557',
   'blue-dark': '#2779bd',
   blue: '#3490dc',
   'blue-light': '#6cb2eb',
@@ -194,8 +196,8 @@ module.exports = {
 
   fonts: {
     exo: ['Exo'],
+    titillium: ['Titillium Web'],
     sans: [
-      'Titillium Web',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -944,7 +946,8 @@ module.exports = {
       gradients: {
         'blue-custom': ['#12223c', '#0a3557', '#12223c']
       }
-    })
+    }),
+    require('tailwindcss-bulma-modals')()
   ],
 
   /*
