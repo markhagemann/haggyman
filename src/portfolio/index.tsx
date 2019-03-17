@@ -1,8 +1,9 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-import Heading from '../common/components/UI/Heading';
 import SEO from '../common/components/SEO';
+import Heading from '../common/components/UI/Heading';
 import Layout from '../common/components/UI/Layout';
+import Company from './components/Company';
 import Preview from './components/Preview';
 
 interface Edge {
@@ -40,23 +41,39 @@ const PortfolioIndex: React.SFC<PortfolioProps> = props => {
   return (
     <Layout showSidebarOnMobile={false}>
       <SEO title="Portfolio" keywords={[`portfolio`, `web developer`, `gatsby`, `node`, `react`, `javascript`, `php`, `silverstripe`]} />
-      <Heading centerOnMobile={true} heading="Some projects I've worked on" />
+      <Heading centerOnMobile={true} heading="Some projects I've contributed to" />
       <p className="text-center text-lg md:text-left">
         {' '}
         I am passionate about anything I end up working on. Solving big problems is just as satisfying as making something pretty.
       </p>
-      <hr className="border-b border-gradient-r-blue-custom my-8" />
-      {posts.map(({ node }, i: number) => (
-        <Preview
-          title={node.frontmatter.title}
-          postImageFluid={node.frontmatter.postImage.childImageSharp.fluid}
-          readingTime={node.fields.readingTime.text}
-          slug={node.frontmatter.slug}
-          date={node.frontmatter.date}
-          externalLink={node.frontmatter.externalLink}
-          key={i}
-        />
-      ))}
+      <Company company="LT Network" role="Web, Content &amp; Custom Development" years="2016 - Present" />
+      {posts.map(({ node }, i: number) => {
+        return node.frontmatter.company === 'LT Network' ? (
+          <Preview
+            title={node.frontmatter.title}
+            postImageFluid={node.frontmatter.postImage.childImageSharp.fluid}
+            readingTime={node.fields.readingTime.text}
+            slug={node.frontmatter.slug}
+            date={node.frontmatter.date}
+            externalLink={node.frontmatter.externalLink}
+            key={i}
+          />
+        ) : null;
+      })}
+      <Company company="Freelance" />
+      {posts.map(({ node }, i: number) => {
+        return node.frontmatter.company === 'Freelance' ? (
+          <Preview
+            title={node.frontmatter.title}
+            postImageFluid={node.frontmatter.postImage.childImageSharp.fluid}
+            readingTime={node.fields.readingTime.text}
+            slug={node.frontmatter.slug}
+            date={node.frontmatter.date}
+            externalLink={node.frontmatter.externalLink}
+            key={i}
+          />
+        ) : null;
+      })}
     </Layout>
   );
 };

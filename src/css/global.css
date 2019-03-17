@@ -13,7 +13,6 @@
 
 p,
 li {
-  font-size: 17px;
   line-height: 1.5em;
 }
 
@@ -35,11 +34,6 @@ input {
 
 a:hover {
   border-bottom-color: transparent;
-}
-
-.gatsby-image-wrapper {
-  margin-top: 1em;
-  margin-bottom: 1.5em;
 }
 
 /**
@@ -64,7 +58,12 @@ a:hover {
 .md-post p,
 .md-post ul,
 .md-post ol {
-  margin-bottom: 1em;
+  margin-bottom: 1.45em;
+}
+
+.md-post .gatsby-resp-image-wrapper {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 /* This is a fix for tailwindcss-bulma-modals */
