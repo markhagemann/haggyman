@@ -31,8 +31,8 @@
     "gatsby-transformer-remark": "^2.2.5",
     "gatsby-transformer-sharp": "^2.1.13",
     "prismjs": "^1.15.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.3.0",
     "react-share": "^2.4.0",
@@ -40,8 +40,8 @@
     "typescript": "^3.3.3333"
   },
   "devDependencies": {
-    "@types/react": "^16.4.14",
-    "@types/react-dom": "^16.0.7",
+    "@types/react": "^16.8.8",
+    "@types/react-dom": "^16.8.2",
     "@types/react-helmet": "^5.0.7",
     "@types/react-share": "^2.1.1",
     "prettier": "^1.16.3",
