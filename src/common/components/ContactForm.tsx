@@ -23,15 +23,15 @@ const ContactForm: React.SFC<ContactFormProps> = () => {
       <div className="flex flex-wrap -mx-3 mt-8">
         <div className="w-full md:w-1/2 px-3 mb-6 md:mb-4">
           <label className={labelClass}>Name</label>
-          <input className={inputClass} id="name" type="text" placeholder="Jane Doe" required />
+          <input className={inputClass} name="name" type="text" placeholder="Jane Doe" required />
         </div>
         <div className="w-full md:w-1/2 px-3 mb-6 md:mb-4">
           <label className={labelClass}>Email</label>
-          <input className={inputClass} id="name" type="email" placeholder="janedoe@gmail.com" required />
+          <input className={inputClass} name="email" type="email" placeholder="janedoe@gmail.com" required />
         </div>
         <div className="w-full px-3 md:mb-0">
           <label className={labelClass}>Message</label>
-          <textarea className={inputClass} id="name" placeholder="Your message here" rows={4} required />
+          <textarea className={inputClass} name="message" placeholder="Your message here" rows={4} required />
         </div>
       </div>
       <Button type="submit" text="Send" fullWidth={true} />
