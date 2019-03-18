@@ -4,7 +4,7 @@ import Button from './UI/Button';
 interface ContactFormProps {}
 
 function getMessageRows(): number {
-  if (window.innerHeight < 600) {
+  if (typeof window !== 'undefined' && window.innerHeight < 600) {
     return 2;
   }
   return 4;
