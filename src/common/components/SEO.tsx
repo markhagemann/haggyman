@@ -1,6 +1,6 @@
+import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
 
 export interface SEOProps {
   description?: string;

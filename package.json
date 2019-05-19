@@ -33,16 +33,16 @@
     "prismjs": "^1.15.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-helmet": "^5.2.0",
+    "react-helmet": "^5.2.1",
     "react-icons": "^3.3.0",
     "react-share": "^2.4.0",
     "react-typed": "^1.1.0",
-    "typescript": "^3.3.3333"
+    "typescript": "^3.4.5"
   },
   "devDependencies": {
     "@types/react": "^16.8.8",
     "@types/react-dom": "^16.8.2",
-    "@types/react-helmet": "^5.0.7",
+    "@types/react-helmet": "^5.0.8",
     "@types/react-share": "^2.1.1",
     "prettier": "^1.16.3",
     "tailwindcss": "^0.7.4",
