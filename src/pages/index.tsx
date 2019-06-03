@@ -12,13 +12,12 @@ const IndexPage: React.SFC<IndexProps> = () => (
     <Heading centerOnMobile={true} heading="Welcome to Haggyman" />
     <p>
       My name is Mark Hagemann but I also commonly go by "Haggy" or "Haggyman". Currently based in Melbourne, working for{' '}
-      <a href="https://www.ltnetwork.co">LT Network</a> / <a href="https://digitalstack.io"> Digital Stack</a>. I am a software developer
-      with a focus on the web, and a curiosity for game development.{' '}
+      <a href="https://www.msts.com"> MSTS</a>. I am a software developer with a focus on the web, and a curiosity for game development.{' '}
     </p>
     <br />{' '}
     <p>
-      My background began with PHP frameworks such as Laravel, SilverStripe and WordPress. These days I am working with React, Angular and
-      Node. I also enjoy learning more about DevOps and design.
+      My background began with PHP frameworks such as Laravel, SilverStripe and WordPress. These days I am working with Vue, React and Node.
+      I also enjoy learning more about DevOps and design.
     </p>
     <br />
     <p>
