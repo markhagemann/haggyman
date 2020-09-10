@@ -16,13 +16,6 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     `gatsby-plugin-postcss`,
-    {
-      resolve: 'gatsby-plugin-purgecss',
-      options: {
-        tailwind: true,
-        purgeOnly: ['src/css/global.css']
-      }
-    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,

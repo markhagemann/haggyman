@@ -71,11 +71,11 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
   const getBlogPosts = makeRequest(graphql, blogPostsQuery).then(result => {
-    createHolderPageAndPosts('blog', result.data.allBlogPosts, 10, createPage);
+    return createHolderPageAndPosts('blog', result.data.allBlogPosts, 10, createPage);
   });
 
   const getPortfolioPosts = makeRequest(graphql, portfolioPostsQuery).then(result => {
-    createHolderPageAndPosts('portfolio', result.data.allPortfolioPosts, 10, createPage);
+    return createHolderPageAndPosts('portfolio', result.data.allPortfolioPosts, 10, createPage);
   });
 
   // Queries for articles and authors nodes to use in creating pages.
