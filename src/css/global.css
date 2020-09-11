@@ -1,10 +1,10 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "./prism-duotone-sea.css";
 @import "./base.css";
 @import "./navbar.css";
 @import "./post.css";
-@import "./prism-duotone-sea.css";
 
 .heading-1 {
   @apply mb-5 text-4xl font-bold;
