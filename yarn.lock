@@ -3953,7 +3953,7 @@ color-string@^1.5.2:
     color-name "^1.0.0"
     simple-swizzle "^0.2.2"
 
-color@^3.0.0, color@^3.1.1, color@^3.1.2:
+color@^3.0.0, color@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/color/-/color-3.1.2.tgz#68148e7f85d41ad7649c5fa8c8106f098d229e10"
   integrity sha512-vXTJhHebByxZn3lDvDJYw4lR5+uB3vuoHsuYA5AKuxRVn5wzzIfQKGLBmgdVRHKTJYeK5rvJcHnrd0Li49CFpg==
@@ -14047,13 +14047,10 @@ table@^5.2.3:
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
 
-tailwindcss-border-gradients@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/tailwindcss-border-gradients/-/tailwindcss-border-gradients-2.0.3.tgz#c07cd44a0dc7c86fe2fa160117f6ac640866bca3"
-  integrity sha512-LI2FOtuX1QcTcmXz49f038SfitEw/7d50vcdWD18foEUSpT7VS8etZAWxn4FdH9vxnAjbGVcEGiTKz3Y9iZvoA==
-  dependencies:
-    color "^3.1.1"
-    lodash "^4.17.11"
+tailwindcss-border-gradients@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/tailwindcss-border-gradients/-/tailwindcss-border-gradients-1.0.1.tgz#79afea7bfb4995169ee343eee59732c73a432df6"
+  integrity sha512-dQxhdJrTRdxHPN5QVkStivuYO6zMpvhwK6fwKMVSMYxZzIyou2EPPpn4xQfWfc0scg0HbZIJtqn7sKbaIonLgg==
 
 tailwindcss-bulma-modals@^1.0.2:
   version "1.0.2"
