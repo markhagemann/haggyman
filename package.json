@@ -39,6 +39,9 @@
     "react-icons": "^3.3.0",
     "react-share": "^2.4.0",
     "react-typed": "^1.1.0",
+    "tailwindcss": "^1.8.8",
+    "tailwindcss-border-gradients": "^2.0.3",
+    "tailwindcss-bulma-modals": "^1.0.2",
     "typescript": "^3.4.5"
   },
   "devDependencies": {
@@ -47,9 +50,6 @@
     "@types/react-helmet": "^5.0.8",
     "@types/react-share": "^2.1.1",
     "prettier": "^1.16.3",
-    "tailwindcss": "^1.8.8",
-    "tailwindcss-border-gradients": "^1.0.1",
-    "tailwindcss-bulma-modals": "^1.0.2",
     "tslint": "^5.11.0",
     "tslint-config-blvd": "^1.2.1",
     "tslint-config-prettier": "^1.15.0",
