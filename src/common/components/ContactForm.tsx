@@ -11,7 +11,7 @@ function getMessageRows(): number {
 }
 
 const ContactForm: React.SFC<ContactFormProps> = () => {
-  const labelClass = 'block tracking-wide text-blue font-bold mb-2';
+  const labelClass = 'block tracking-wide text-blue-standard font-bold mb-2';
   const inputFocusClass = ' focus:outline-none focus:border focus:border-blue-dark';
   const inputClass = `appearance-none border border-blue-darkest-custom block w-full bg-blue-darkest-custom text-white py-3 px-4 leading-tight ${inputFocusClass}`;
 
@@ -25,7 +25,7 @@ const ContactForm: React.SFC<ContactFormProps> = () => {
       className="bg-blue-darker-custom shadow-md rounded px-5 py-5 sm:px-8 sm:py-8 mb-4"
     >
       <input type="hidden" name="bot-field" />
-      <h1 className="mb-5 text-blue-light"> Contact me </h1>
+      <h1 className="mb-5 text-blue-light text-3.5xl font-bold leading-9"> Contact me </h1>
       <p className="hidden sm:block text-grey-light"> Leave some details and I'll get back to you soon. </p>
       <div className="flex flex-wrap -mx-3 sm:mt-8">
         <div className="w-full md:w-1/2 px-3 mb-6 md:mb-4">

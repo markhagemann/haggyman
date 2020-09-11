@@ -1,55 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./base.css";
+@import "./navbar.css";
+@import "./post.css";
+@import "./prism-duotone-sea.css";
 
-p,
-li {
-  line-height: 1.5em;
-}
-
-h2 {
-  font-size: 1.6em;
-}
-
-a {
-  transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
-  border-bottom: 1px solid;
-  color: #6cb2eb;
-  text-decoration: none;
-}
-
-button,
-input {
-  transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out;
-}
-
-a:hover {
-  border-bottom-color: transparent;
-}
-
-.md-post h1,
-.md-post h2,
-.md-post h3 {
-  margin-bottom: 0.35em;
-}
-
-.md-post h2 {
-  font-size: 1.45em;
-}
-
-.md-post p,
-.md-post ul,
-.md-post ol {
-  margin-bottom: 1.45em;
-}
-
-.md-post .gatsby-resp-image-wrapper {
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
-/* This is a fix for tailwindcss-bulma-modals */
-.modal-close::after {
-  height: 50%;
-  width: 2px;
+.heading-1 {
+  @apply mb-5 text-4xl font-bold;
 }

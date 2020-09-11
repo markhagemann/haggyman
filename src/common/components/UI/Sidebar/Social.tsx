@@ -3,13 +3,13 @@ import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-
 
 interface SocialProps {}
 
-const linkClass = 'no-underline border-0 p-2';
+const linkClass = 'no-underline border-0';
 const iconClass = 'hover:text-blue-lighter text-xl';
 
 const Social: React.SFC<SocialProps> = () => {
   return (
     <div className="border-t border-gradient-r-blue-custom py-3 mt-3">
-      <ul className="flex justify-center list-reset">
+      <ul className="flex justify-center space-x-4">
         <li>
           <a className={linkClass} href="https://github.com/markhagemann">
             <span>

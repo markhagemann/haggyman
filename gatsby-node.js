@@ -53,6 +53,7 @@ const portfolioPostsQuery = `
   }
 `;
 
+// TODO: Use async / await instead
 const makeRequest = (graphql, request) =>
   new Promise((resolve, reject) => {
     // Query for article nodes to use in creating pages.
@@ -70,10 +71,12 @@ const makeRequest = (graphql, request) =>
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
+  // TODO: Use async / await instead
   const getBlogPosts = makeRequest(graphql, blogPostsQuery).then(result => {
     return createHolderPageAndPosts('blog', result.data.allBlogPosts, 10, createPage);
   });
 
+  // TODO: Use async / await instead
   const getPortfolioPosts = makeRequest(graphql, portfolioPostsQuery).then(result => {
     return createHolderPageAndPosts('portfolio', result.data.allPortfolioPosts, 10, createPage);
   });

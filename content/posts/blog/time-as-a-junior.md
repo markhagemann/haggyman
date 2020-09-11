@@ -13,7 +13,7 @@ that you don't know enough, will likely end up motivating you to become a much b
 It also means that you feel you have a lot to learn from your colleagues, which is an excellent
 position to be in.
 
-## Ask questions without asking the same question again
+### Ask questions without asking the same question again
 
 As a junior you're expected to ask questions and it would probably raise concern if you weren't.
 When asking the question, try to fully grasp it so that you don't need to ask it again, otherwise write it
@@ -21,7 +21,7 @@ down for later use. When you're told that something is best practice - find out 
 question it. Without people questioning best practices we wouldn't end up with things such as [React](https://reactjs.org)
 and [Tailwind](https://tailwindcss.com/docs/what-is-tailwind).
 
-## Code reviews help... a lot
+### Code reviews help... a lot
 
 The importance of having someone review your code cannot be repeated enough.
 
@@ -33,7 +33,7 @@ The importance of having someone review your code cannot be repeated enough.
 Don't take criticism of your code as criticism of you personally. You stand to gain a lot more by
 allowing others to review your code, regardless of whether you completely agree with their comments.
 
-## Aim to be a specialist first
+### Aim to be a specialist first
 
 Being a generalist is very useful and impressive but if you start a job that requires you
 to work on PHP frameworks such as WordPress or Laravel - aim to become very comfortable
@@ -41,7 +41,7 @@ and confident in that realm before worrying too much about learning the next hot
 In saying that, anything that helps motivate you to develop your programming skills outside of your day job
 is highly encouraged.
 
-## There are great resources and tools out there to help
+### There are great resources and tools out there to help
 
 Tools such as TSLint or ESLint will can improve your code quality and productivity immensely. Though you may
 find some of the errors a little frustrating at first, if you take the time to research why those
@@ -55,14 +55,14 @@ In addition to that, here are a few other things I recommend looking into:
 3. Meetups through websites such as [Meetup](https://www.meetup.com) as well as conferences
 4. Management tools such as [Todoist](https://todoist.com) and [Trello](https://trello.com)
 
-## Try to build things you'd personally find useful
+### Try to build things you'd personally find useful
 
 Finding motivation outside of work can be tough sometimes and thinking of ideas outside of
 a to-do list or a weather app may not come to you that easy. If you can think of a
 hobby or interest of yours that may benefit from your knowledge of it as well as programming,
 you will likely be a lot more driven to complete it.
 
-## Embrace being confused about problems
+### Embrace being confused about problems
 
 Once you begin to work on something that you know all the answers to and have done it a bunch of
 times before... your days tend to go a lot slower. Take a can-do attitude to problems that are

@@ -12,12 +12,12 @@ tags: ['php', 'wordpress', 'mysql', 'elementor']
 
 ![Digital Stack Website](./digitalstack-wp.png 'Digital Stack Website')[]()
 
-## About
+### About
 
 Digital Stack is a web app that provides franchise marketing solutions for franchisees and agencies.
 It ensures brand protection and empowers local managers to create brilliant localized campaigns online and in print.
 
-## Goals
+### Goals
 
 - Modernise the existing Digital Stack public website
 - Add multilingual support
@@ -25,11 +25,11 @@ It ensures brand protection and empowers local managers to create brilliant loca
 - Provide social proofing
 - Improve conversion rates
 
-## Tools used
+### Tools used
 
 WordPress, Elementor, and MySQL
 
-## My learnings
+### My learnings
 
 - Elementor provides rapid page building with easy customisation
 - Weglot multilingual support integrates well with WordPress

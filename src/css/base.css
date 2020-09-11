@@ -1,0 +1,22 @@
+a {
+  transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+  border-bottom: 1px solid;
+  color: #6cb2eb;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom-color: transparent;
+  }
+}
+
+button,
+input {
+  transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out;
+}
+
+/* This is a fix for tailwindcss-bulma-modals */
+.modal-close::after {
+  height: 50%;
+  width: 2px;
+}
+

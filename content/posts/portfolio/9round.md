@@ -12,11 +12,11 @@ tags: ['php', 'silverstripe', 'mysql', 'css', 'jquery']
 
 ![9Round Website](./9round.png '9Round Website')[]()
 
-## About
+### About
 
 9round is a global fitness franchise that allows for members to see results in a quick and convenient workout.
 
-## Goals
+### Goals
 
 - Modernise the site with a focus on mobile
 - Improve club search functionality
@@ -25,11 +25,11 @@ tags: ['php', 'silverstripe', 'mysql', 'css', 'jquery']
 - Generate interest from potential franchisees
 - Improve online enrolment experience
 
-## Tools used
+### Tools used
 
 SilverStripe 3, MySQL, CSS, and jQuery
 
-## My learnings
+### My learnings
 
 - Mapping CMS selected time ranges into 30min interval slots for free workouts
 - Managing different colour schemes in CSS for mobile vs desktop

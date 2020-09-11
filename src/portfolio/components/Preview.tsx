@@ -16,7 +16,7 @@ const Preview: React.SFC<PreviewProps> = (props: PreviewProps) => {
   return (
     <div className=" mt-6 mb-8">
       <Link to={`/portfolio/${props.slug}`} className="text-grey-light hover:text-blue-lighter">
-        <h2 className="font-light mb-2"> {props.title} </h2>
+        <h3 className="text-2xl font-light"> {props.title} </h3>
       </Link>
       <Details date={props.date} readingTime={props.readingTime} externalLink={props.externalLink} />
       {props.postImageFluid && (

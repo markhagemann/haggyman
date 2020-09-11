@@ -9,15 +9,13 @@ interface DetailsProps {
 
 const Details: React.SFC<DetailsProps> = (props: DetailsProps) => {
   return (
-    <div className="mb-5 font-exo flex">
-      <span className="text-blue-dark">
-        {props.date} &raquo; {props.readingTime} &raquo;
+    <div className="mb-5 font-exo flex space-x-1 text-blue-dark items-center">
+      <span className="pt-1">
+      {props.date} &raquo; {props.readingTime} &raquo;
       </span>
       {props.externalLink && (
-        <a className="border-0 ml-5px text-blue-dark" href={props.externalLink}>
-          <span>
+        <a className="border-0 text-blue-dark hover:text-blue-standard" href={props.externalLink}>
             <FaExternalLinkAlt />
-          </span>
         </a>
       )}
     </div>

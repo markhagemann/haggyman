@@ -12,11 +12,11 @@ tags: ['php', 'silverstripe', 'multilingual', 'mysql', 'webpack', 'sass', 'jquer
 
 ![Snap Fitness Website](./snap-fitness.png 'Snap Fitness Website')[]()
 
-## About
+### About
 
 Snap Fitness is a health and fitness club franchise with over 2500 locations around the world.
 
-## Goals
+### Goals
 
 - Combine 12+ websites for different countries with different languages into one multilingual site
 - Simple way to share and update common content across multiple country pages and child pages
@@ -25,11 +25,11 @@ Snap Fitness is a health and fitness club franchise with over 2500 locations aro
 - Handle redirects from all legacy sites
 - Provide in-depth franchising information
 
-## Tools used
+### Tools used
 
 SilverStripe 4, MySQL, Webpack, SASS, and jQuery
 
-## My learnings
+### My learnings
 
 - Code structure to support faux subsites
 - The benefits of SASS such as variables, mixins, nested syntax and file joining

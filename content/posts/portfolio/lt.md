@@ -13,21 +13,21 @@ techStack: ['javascript', 'react', 'gatsby', 'sass']
 
 ![LT Network Website](./lt-network.png 'LT Network Website')[]()
 
-## About
+### About
 
 LT Network is a Digital Marketing Agency based in Melbourne that specialises in Franchises.
 
-## Goals
+### Goals
 
 - Make clear what it is LT Network specialises in
 - Create a site that is mobile and desktop friendly website with quick response times
 - Allow for easy customisation of content through a headless CMS
 
-## Tools used
+### Tools used
 
 React, Gatsby, Contentful, and SASS
 
-## My learnings
+### My learnings
 
 - Familiarity with static site generators and how powerful yet simple Gatsby is
 - Handling forms on a static site

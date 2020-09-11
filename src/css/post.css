@@ -1,0 +1,46 @@
+.md-post {
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-3xl;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-bold leading-8 mb-1;
+  }
+
+  p,
+  ul,
+  ol {
+    margin-bottom: 1.45em;
+    display: block;
+  }
+
+  ol,
+  ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  .gatsby-resp-image-wrapper {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
