@@ -1,11 +1,9 @@
 a {
   transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
-  border-bottom: 1px solid;
-  color: #6cb2eb;
-  text-decoration: none;
+  @apply border-b border-blue-light text-blue-standard text-blue-light no-underline;
 
   &:hover {
-    border-bottom-color: transparent;
+    @apply border-transparent;
   }
 }
 

@@ -6,13 +6,15 @@
       -webkit-transition: all 0.35s ease;
       transition: all 0.35s ease;
     }
+
     &:before {
+      @apply bg-blue-light;
       bottom: -1px;
       height: 1px;
       width: 0%;
       content: '';
-      background-color: #6cb2eb;
     }
+
     &:after {
       left: 0;
       top: 0;
@@ -23,19 +25,20 @@
       max-width: 0%;
       overflow: hidden;
     }
-    .active {
-      &:before {
-        background-color: #bcdefa;
-      }
+  }
+
+  .active {
+    &:before {
+      @apply bg-blue-lighter;
     }
-    &:hover:before,
-    .active &:before {
-      opacity: 1;
-      width: 100%;
-    }
-    &:hover:after,
-    .active &:after {
-      max-width: 100%;
-    }
+  }
+  a:hover:before,
+  .active a:before {
+    opacity: 1;
+    width: 100%;
+  }
+  a:hover:after,
+  .active a:after {
+    max-width: 100%;
   }
 }
