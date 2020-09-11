@@ -14,17 +14,17 @@ module.exports = {
     extend: {
       colors: {
         blue: {
-          'custom-transparent': 'rgba(8, 31, 45, 0.5)',
+          transparent: 'rgba(8, 31, 45, 0.5)',
           dark: '#2779bd',
-          'dark-custom-border': '#0a3557',
-          'darker-custom': '#12223c',
-          'darkest-custom': '#00182c',
-          'dark-custom-border': '#0a3557',
+          'dark-border': '#0a3557',
+          darker: '#12223c',
+          darkest: '#00182c',
+          'dark-border': '#0a3557',
           'darker-alt': '#1d345b',
           light: '#6cb2eb',
           lighter: '#bcdefa',
           lightest: '#eff8ff',
-          standard: '#3490dc',
+          standard: '#3490dc'
         },
         grey: {
           darkest: '#3d4852',
@@ -33,12 +33,17 @@ module.exports = {
           light: '#dae1e7',
           lighter: '#f1f5f8',
           lightest: '#f8fafc',
-          standard: '#b8c2cc',
+          standard: '#b8c2cc'
         }
       },
       fontFamily: {
         exo: ['Exo'],
         titillium: ['Titillium Web']
+      },
+      linearBorderGradients: {
+        colors: {
+          'blue-custom': ['#12223c', '#0a3557', '#12223c'],
+        },
       },
       margin: {
         '75': '18.75rem',
@@ -51,19 +56,5 @@ module.exports = {
     }
   },
   variants: {},
-  plugins: [
-    require('tailwindcss-border-gradients')({
-      variants: ['responsive'],
-      directions: {
-        t: 'to top',
-        r: 'to right',
-        b: 'to bottom',
-        l: 'to left'
-      },
-      gradients: {
-        'blue-custom': ['#12223c', '#0a3557', '#12223c']
-      }
-    }),
-    require('tailwindcss-bulma-modals')()
-  ]
+  plugins: [require('tailwindcss-border-gradients')(), require('tailwindcss-bulma-modals')()]
 };
