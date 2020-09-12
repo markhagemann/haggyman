@@ -9,10 +9,13 @@ interface PreviewProps {
   slug: string;
 }
 
-const Preview: React.SFC<PreviewProps> = (props: PreviewProps) => {
+const Preview: React.FC<PreviewProps> = (props: PreviewProps) => {
   return (
     <div className="my-8">
-      <Link to={`/blog/${props.slug}`} className="text-grey-light hover:text-blue-lighter">
+      <Link
+        to={`/blog/${props.slug}`}
+        className="text-grey-light hover:text-blue-lighter"
+      >
         <h2 className="text-3xl font-bold mb-2"> {props.title} </h2>
       </Link>
       <div className="mb-3 font-exo">

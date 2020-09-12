@@ -1,12 +1,11 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
-interface NavbarProps {}
-
-const activeLinkClass = 'border-b border-blue-lighter text-blue-lighter hover:border-blue-lighter active';
+const activeLinkClass =
+  'border-b border-blue-lighter text-blue-lighter hover:border-blue-lighter active';
 const linkClass = 'no-underline border-0 relative';
 
-const Navbar: React.SFC<NavbarProps> = () => {
+const Navbar: React.FC = () => {
   return (
     <div
       id="nav"
@@ -19,12 +18,20 @@ const Navbar: React.SFC<NavbarProps> = () => {
           </Link>
         </li>
         <li className="mr-6">
-          <Link to="/portfolio/" activeClassName={activeLinkClass} className={linkClass}>
+          <Link
+            to="/portfolio/"
+            activeClassName={activeLinkClass}
+            className={linkClass}
+          >
             Portfolio
           </Link>
         </li>
         <li className="mr-6">
-          <Link to="/blog/" activeClassName={activeLinkClass} className={linkClass}>
+          <Link
+            to="/blog/"
+            activeClassName={activeLinkClass}
+            className={linkClass}
+          >
             Blog
           </Link>
         </li>

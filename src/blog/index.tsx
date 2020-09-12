@@ -29,11 +29,14 @@ interface BlogProps {
   };
 }
 
-const BlogIndex: React.SFC<BlogProps> = props => {
+const BlogIndex: React.FC<BlogProps> = props => {
   const posts = props.data.posts.edges;
   return (
     <Layout>
-      <SEO title="Blog" keywords={[`programming`, `web development`, `javascript`]} />
+      <SEO
+        title="Blog"
+        keywords={[`programming`, `web development`, `javascript`]}
+      />
       <Heading centerOnMobile={true} heading="Some of my thoughts" />
       {posts.map(({ node }, i: number) => (
         <Preview

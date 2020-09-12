@@ -7,15 +7,18 @@ interface DetailsProps {
   externalLink?: string;
 }
 
-const Details: React.SFC<DetailsProps> = (props: DetailsProps) => {
+const Details: React.FC<DetailsProps> = (props: DetailsProps) => {
   return (
     <div className="mb-5 font-exo flex space-x-1 text-blue-dark items-center">
       <span className="pt-1">
-      {props.date} &raquo; {props.readingTime} &raquo;
+        {props.date} &raquo; {props.readingTime} &raquo;
       </span>
       {props.externalLink && (
-        <a className="border-0 text-blue-dark hover:text-blue-standard" href={props.externalLink}>
-            <FaExternalLinkAlt />
+        <a
+          className="border-0 text-blue-dark hover:text-blue-standard"
+          href={props.externalLink}
+        >
+          <FaExternalLinkAlt />
         </a>
       )}
     </div>

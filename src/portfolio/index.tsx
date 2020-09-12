@@ -21,6 +21,8 @@ interface Edge {
       externalLink: string;
       postImage: {
         childImageSharp: {
+          // TODO: Find proper type for this
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           fluid: any;
         };
       };
@@ -36,18 +38,43 @@ interface PortfolioProps {
   };
 }
 
-const PortfolioIndex: React.SFC<PortfolioProps> = props => {
+const PortfolioIndex: React.FC<PortfolioProps> = props => {
   const posts = props.data.posts.edges;
   return (
     <Layout showSidebarOnMobile={false}>
-      <SEO title="Portfolio" keywords={[`portfolio`, `web developer`, `gatsby`, `node`, `react`, `javascript`, `php`, `silverstripe`]} />
-      <Heading centerOnMobile={true} heading="Some projects I've contributed to" />
+      <SEO
+        title="Portfolio"
+        keywords={[
+          `portfolio`,
+          `web developer`,
+          `gatsby`,
+          `node`,
+          `react`,
+          `javascript`,
+          `php`,
+          `silverstripe`,
+        ]}
+      />
+      <Heading
+        centerOnMobile={true}
+        heading="Some projects I've contributed to"
+      />
       <p className="text-center text-lg md:text-left">
         {' '}
-        I am passionate about anything I end up working on. Solving big problems is just as satisfying as making something pretty.
+        I am passionate about anything I end up working on. Solving big problems
+        is just as satisfying as making something pretty.
       </p>
-      <Company company="MSTS" role="Developer" years="2019 - Present" noPosts={true} />
-      <Company company="LT Network" role="Web, Content &amp; Custom Development" years="2016 - 2019" />
+      <Company
+        company="MSTS"
+        role="Developer"
+        years="2019 - Present"
+        noPosts={true}
+      />
+      <Company
+        company="LT Network"
+        role="Web, Content &amp; Custom Development"
+        years="2016 - 2019"
+      />
       {posts.map(({ node }, i: number) => {
         return node.frontmatter.company === 'LT Network' ? (
           <Preview

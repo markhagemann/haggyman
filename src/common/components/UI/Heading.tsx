@@ -6,7 +6,7 @@ interface HeadingProps {
   underline?: boolean;
 }
 
-const Heading: React.SFC<HeadingProps> = (props: HeadingProps) => {
+const Heading: React.FC<HeadingProps> = (props: HeadingProps) => {
   let headingClass = 'heading-1';
   if (props.centerOnMobile) {
     headingClass += ' text-center md:text-left';

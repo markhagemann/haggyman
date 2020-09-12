@@ -1,9 +1,6 @@
 module.exports = {
-    semi: true,
-    singleQuote: true,
-    tabWidth: 4,
-    trailingComma: 'all',
-    printWidth: 80,
+    arrowParens: 'avoid',
+    bracketSpacing: true,
     overrides: [
         {
             files: '*.{yml,yaml}',
@@ -12,4 +9,10 @@ module.exports = {
             },
         },
     ],
+    printWidth: 80,
+    semi: true,
+    singleQuote: true,
+    tabWidth: 2,
+    trailingComma: 'all',
+    useTabs: false,
 }

@@ -9,16 +9,16 @@ interface LayoutProps {
 }
 
 const containerClass: (props: LayoutProps) => string = props => {
-  const showSidebarOnMobile = !!props.showSidebarOnMobile ? true : false;
+  const showSidebarOnMobile = props.showSidebarOnMobile ? true : false;
   return classNames({
     'container mx-auto max-w-2xl px-5 my-8 md:mt-16 md:text-left md:pt-24 md:px-8 md:ml-75': true,
-    'mt-32': !showSidebarOnMobile
+    'mt-32': !showSidebarOnMobile,
   });
 };
 
-const Layout: React.SFC<LayoutProps> = props => {
+const Layout: React.FC<LayoutProps> = props => {
   const { children } = props;
-  const showSidebarOnMobile = !!props.showSidebarOnMobile ? true : false;
+  const showSidebarOnMobile = props.showSidebarOnMobile ? true : false;
   return (
     <StaticQuery
       query={graphql`
