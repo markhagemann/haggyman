@@ -5,10 +5,11 @@ interface ModalProps {
   onClose: () => void;
 }
 
-const Modal: React.SFC<ModalProps> = props => {
+const Modal: React.FC<ModalProps> = props => {
   const { children } = props;
   const node = useRef<HTMLDivElement>(null);
   // TODO: Figure out proper type of event
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleClick = (e: any) => {
     if (node && node.current && node.current.contains(e.target)) {
       // inside click
@@ -37,7 +38,11 @@ const Modal: React.SFC<ModalProps> = props => {
       <div ref={node} className="modal-content">
         {children}
       </div>
-      <button onClick={() => props.onClose()} className="modal-close" aria-label="close" />
+      <button
+        onClick={() => props.onClose()}
+        className="modal-close"
+        aria-label="close"
+      />
     </div>
   );
 };

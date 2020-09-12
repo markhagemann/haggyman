@@ -23,13 +23,22 @@ interface PostTemplateProps {
   };
 }
 
-const BlogPostTemplate: React.SFC<PostTemplateProps> = ({ data }) => {
+const BlogPostTemplate: React.FC<PostTemplateProps> = ({ data }) => {
   const post = data.post;
   const { title } = post.frontmatter;
   return (
     <Layout>
-      <SEO title={title} keywords={post.frontmatter.tags} description={post.frontmatter.description} />
-      <Post title={title} date={post.frontmatter.date} readingTime={post.fields.readingTime.text} html={post.html} />
+      <SEO
+        title={title}
+        keywords={post.frontmatter.tags}
+        description={post.frontmatter.description}
+      />
+      <Post
+        title={title}
+        date={post.frontmatter.date}
+        readingTime={post.fields.readingTime.text}
+        html={post.html}
+      />
     </Layout>
   );
 };

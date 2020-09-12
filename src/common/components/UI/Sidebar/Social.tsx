@@ -1,12 +1,16 @@
 import React from 'react';
-import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
-
-interface SocialProps {}
+import {
+  FaEnvelope,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+} from 'react-icons/fa';
 
 const linkClass = 'no-underline border-0';
 const iconClass = 'hover:text-blue-lighter text-xl';
 
-const Social: React.SFC<SocialProps> = () => {
+const Social: React.FC = () => {
   return (
     <div className="border-t border-blue-transparent border-gradient-r-blue-custom py-3 mt-3">
       <ul className="flex justify-center space-x-4">
@@ -32,7 +36,10 @@ const Social: React.SFC<SocialProps> = () => {
           </a>
         </li>
         <li>
-          <a className={linkClass} href="https://www.linkedin.com/in/mark-hagemann-64a367158/">
+          <a
+            className={linkClass}
+            href="https://www.linkedin.com/in/mark-hagemann-64a367158/"
+          >
             <span>
               <FaLinkedin className={iconClass} />
             </span>

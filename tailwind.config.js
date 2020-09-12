@@ -1,15 +1,21 @@
 module.exports = {
   future: {
     purgeLayersByDefault: true,
-    removeDeprecatedGapUtilities: true
+    removeDeprecatedGapUtilities: true,
   },
-  purge: ['./src/css/global', './src/**/*.js', './src/**/*.jsx', './src/**/*.ts', './src/**/*.tsx'],
+  purge: [
+    './src/css/global',
+    './src/**/*.js',
+    './src/**/*.jsx',
+    './src/**/*.ts',
+    './src/**/*.tsx',
+  ],
   theme: {
     screens: {
       sm: '576px',
       md: '768px',
       lg: '992px',
-      xl: '1200px'
+      xl: '1200px',
     },
     extend: {
       colors: {
@@ -19,12 +25,11 @@ module.exports = {
           'dark-border': '#0a3557',
           darker: '#12223c',
           darkest: '#00182c',
-          'dark-border': '#0a3557',
           'darker-alt': '#1d345b',
           light: '#6cb2eb',
           lighter: '#bcdefa',
           lightest: '#eff8ff',
-          standard: '#3490dc'
+          standard: '#3490dc',
         },
         grey: {
           darkest: '#3d4852',
@@ -33,12 +38,12 @@ module.exports = {
           light: '#dae1e7',
           lighter: '#f1f5f8',
           lightest: '#f8fafc',
-          standard: '#b8c2cc'
-        }
+          standard: '#b8c2cc',
+        },
       },
       fontFamily: {
         exo: ['Exo'],
-        titillium: ['Titillium Web']
+        titillium: ['Titillium Web'],
       },
       linearBorderGradients: {
         colors: {
@@ -46,15 +51,18 @@ module.exports = {
         },
       },
       margin: {
-        '75': '18.75rem',
-        '84': '21rem'
+        75: '18.75rem',
+        84: '21rem',
       },
       padding: {
-        '75': '18.75rem',
-        '84': '21rem'
-      }
-    }
+        75: '18.75rem',
+        84: '21rem',
+      },
+    },
   },
   variants: {},
-  plugins: [require('tailwindcss-border-gradients')(), require('tailwindcss-bulma-modals')()]
+  plugins: [
+    require('tailwindcss-border-gradients')(),
+    require('tailwindcss-bulma-modals')(),
+  ],
 };

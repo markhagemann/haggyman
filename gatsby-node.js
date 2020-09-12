@@ -1,6 +1,6 @@
 'use strict';
 
-const _ = require(`lodash`);
+// const _ = require(`lodash`);
 const Promise = require(`bluebird`);
 const path = require(`path`);
 // const slash = require(`slash`);
@@ -64,7 +64,7 @@ const makeRequest = (graphql, request) =>
         }
 
         return result;
-      })
+      }),
     );
   });
 
@@ -73,13 +73,25 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // TODO: Use async / await instead
   const getBlogPosts = makeRequest(graphql, blogPostsQuery).then(result => {
-    return createHolderPageAndPosts('blog', result.data.allBlogPosts, 10, createPage);
+    return createHolderPageAndPosts(
+      'blog',
+      result.data.allBlogPosts,
+      10,
+      createPage,
+    );
   });
 
   // TODO: Use async / await instead
-  const getPortfolioPosts = makeRequest(graphql, portfolioPostsQuery).then(result => {
-    return createHolderPageAndPosts('portfolio', result.data.allPortfolioPosts, 10, createPage);
-  });
+  const getPortfolioPosts = makeRequest(graphql, portfolioPostsQuery).then(
+    result => {
+      return createHolderPageAndPosts(
+        'portfolio',
+        result.data.allPortfolioPosts,
+        10,
+        createPage,
+      );
+    },
+  );
 
   // Queries for articles and authors nodes to use in creating pages.
   return Promise.all([getBlogPosts, getPortfolioPosts]);
@@ -87,7 +99,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
 function createHolderPageAndPosts(type, posts, postsPerPage, createPage) {
   const allPosts = posts.edges;
-  const groupedPosts = posts.group;
+  // const groupedPosts = posts.group;
   const paginationTemplate = path.resolve(`src/${type}/index.tsx`);
   let numPages = Math.ceil(allPosts.length / postsPerPage);
 
@@ -100,8 +112,8 @@ function createHolderPageAndPosts(type, posts, postsPerPage, createPage) {
         limit: postsPerPage,
         skip: i * postsPerPage,
         nextPage: `/${type}/${i + 2}`,
-        pageNumber: i + 1
-      }
+        pageNumber: i + 1,
+      },
     });
   });
 
@@ -136,8 +148,8 @@ function createHolderPageAndPosts(type, posts, postsPerPage, createPage) {
       path: `${type}/${node.frontmatter.slug}`,
       component: template,
       context: {
-        slug
-      }
+        slug,
+      },
     });
   });
 }

@@ -2,7 +2,7 @@ import { graphql, StaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 import React from 'react';
 
-const Profile = () => (
+const Profile: React.FC = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -17,7 +17,10 @@ const Profile = () => (
     `}
     render={data => (
       <div style={{ maxWidth: '175px' }} className="mx-auto">
-        <Img className="border-2 border-blue-transparent border-gradient-t-blue-custom" fixed={data.placeholderImage.childImageSharp.fixed} />
+        <Img
+          className="border-2 border-blue-transparent border-gradient-t-blue-custom"
+          fixed={data.placeholderImage.childImageSharp.fixed}
+        />
       </div>
     )}
   />
