@@ -4,7 +4,7 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
   },
   purge: [
-    './src/css/global',
+    './src/css/*.css',
     './src/**/*.js',
     './src/**/*.jsx',
     './src/**/*.ts',
@@ -16,6 +16,11 @@ module.exports = {
       md: '768px',
       lg: '992px',
       xl: '1200px',
+    },
+    linearBorderGradients: {
+      colors: {
+        'blue-custom': ['#12223c', '#0a3557', '#12223c'],
+      },
     },
     extend: {
       colors: {
@@ -44,11 +49,6 @@ module.exports = {
       fontFamily: {
         exo: ['Exo'],
         titillium: ['Titillium Web'],
-      },
-      linearBorderGradients: {
-        colors: {
-          'blue-custom': ['#12223c', '#0a3557', '#12223c'],
-        },
       },
       margin: {
         75: '18.75rem',
