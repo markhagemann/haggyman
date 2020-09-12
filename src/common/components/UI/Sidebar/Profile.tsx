@@ -18,7 +18,7 @@ const Profile: React.FC = () => (
     render={data => (
       <div style={{ maxWidth: '175px' }} className="mx-auto">
         <Img
-          className="border-2 border-blue-transparent border-gradient-t-blue-custom"
+          className="border-2 border-gradient-t-blue-custom"
           fixed={data.placeholderImage.childImageSharp.fixed}
         />
       </div>
