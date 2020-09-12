@@ -21,7 +21,7 @@ const Preview: React.SFC<PreviewProps> = (props: PreviewProps) => {
         </span>
       </div>
       <p className="mb-3">{props.excerpt}</p>
-      <Link to={`/blog/${props.slug}`}>(Read: more) =></Link>
+      <Link to={`/blog/${props.slug}`}>(Read: more) &#61;&gt; </Link>
     </div>
   );
 };
