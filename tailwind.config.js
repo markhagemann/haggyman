@@ -19,7 +19,7 @@ module.exports = {
     },
     linearBorderGradients: {
       colors: {
-        'blue-custom': ['#12223c', '#0a3557', '#12223c'],
+        'blue-dark': ['#12223c', '#0a3557', '#12223c'],
       },
     },
     extend: {
