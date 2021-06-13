@@ -6,9 +6,9 @@ const Profile: React.FC = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "profile.png" }) {
+        placeholderImage: file(relativePath: { eq: "myself-and-taito.jpg" }) {
           childImageSharp {
-            fixed(width: 175) {
+            fixed(width: 575) {
               ...GatsbyImageSharpFixed
             }
           }
@@ -16,8 +16,9 @@ const Profile: React.FC = () => (
       }
     `}
     render={data => (
-      <div style={{ maxWidth: '175px' }} className="mx-auto">
+      <div className="mx-auto">
         <Img
+          style={{ maxWidth: '175px', maxHeight: '175px' }}
           className="border-2 border-blue-transparent border-gradient-t-blue-dark"
           fixed={data.placeholderImage.childImageSharp.fixed}
         />

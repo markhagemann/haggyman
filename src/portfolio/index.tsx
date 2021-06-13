@@ -65,7 +65,7 @@ const PortfolioIndex: React.FC<PortfolioProps> = props => {
         is just as satisfying as making something pretty.
       </p>
       <Company
-        company="MSTS"
+        company="TreviPay"
         role="Developer"
         years="2019 - Present"
         noPosts={true}

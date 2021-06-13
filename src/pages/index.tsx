@@ -11,8 +11,12 @@ const IndexPage: React.FC = () => (
     <p>
       My name is Mark Hagemann but I also commonly go by &quot;Haggy&quot; or
       &quot;Haggyman&quot;. Currently based in Melbourne, working for{' '}
-      <a href="https://www.msts.com"> MSTS</a>. I am a software developer with a
-      focus on the web, and a curiosity for game development.{' '}
+      <a target="_blank" rel="noopener noreferrer" href="https://trevipay.com">
+        {' '}
+        TreviPay
+      </a>
+      . I am a software developer with a focus on the web, and a curiosity for
+      game development.{' '}
     </p>
     <br />{' '}
     <p>
