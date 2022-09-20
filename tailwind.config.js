@@ -1,9 +1,5 @@
 module.exports = {
-  future: {
-    purgeLayersByDefault: true,
-    removeDeprecatedGapUtilities: true,
-  },
-  purge: [
+  content: [
     './src/css/*.css',
     './src/**/*.js',
     './src/**/*.jsx',
@@ -11,12 +7,6 @@ module.exports = {
     './src/**/*.tsx',
   ],
   theme: {
-    screens: {
-      sm: '576px',
-      md: '768px',
-      lg: '992px',
-      xl: '1200px',
-    },
     linearBorderGradients: {
       colors: {
         'blue-dark': ['#12223c', '#0a3557', '#12223c'],
@@ -60,7 +50,6 @@ module.exports = {
       },
     },
   },
-  variants: {},
   plugins: [
     require('tailwindcss-border-gradients')(),
     require('tailwindcss-bulma-modals')(),

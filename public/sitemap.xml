@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://haggyman.com</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://haggyman.com/thanks</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://haggyman.com/blog</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://haggyman.com/portfolio</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://haggyman.com/blog/components/Preview</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://haggyman.com/portfolio/components/Company</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://haggyman.com/portfolio/components/Preview</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://haggyman.com/blog/learnings-as-a-junior</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://haggyman.com/portfolio/9round</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://haggyman.com/portfolio/digitalstack</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://haggyman.com/portfolio/insurgence</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://haggyman.com/portfolio/lt-network</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://haggyman.com/portfolio/olive-sundays</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://haggyman.com/portfolio/snap-fitness</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.2</priority>
+  </url>
+</urlset>

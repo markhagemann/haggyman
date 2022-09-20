@@ -51,16 +51,6 @@ module.exports = {
         functions: 'always-multiline',
       },
     ],
-    // defines how GraphQL is recognized
-    'graphql/template-strings': [
-      'error',
-      {
-        env: 'relay',
-        schemaJsonFilepath: path.resolve(__dirname, './schema.json'),
-        tagName: 'graphql',
-      },
-    ],
-
     'import/no-deprecated': 'warn',
     'react/jsx-no-duplicate-props': [
       2,

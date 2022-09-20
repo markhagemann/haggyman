@@ -1,7 +1,7 @@
 import React from 'react';
-import SEO from '../common/components/SEO';
-import Heading from '../common/components/UI/Heading';
-import Layout from '../common/components/UI/Layout';
+import SEO from '../components/SEO';
+import Heading from '../components/UI/Heading';
+import Layout from '../components/UI/Layout';
 
 const ThanksPage: React.FC = () => (
   <Layout>
