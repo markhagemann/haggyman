@@ -12,6 +12,10 @@ module.exports = {
         'blue-dark': ['#12223c', '#0a3557', '#12223c'],
       },
     },
+    fontFamily: {
+      display: ['Oxanium'],
+      body: ['Exo'],
+    },
     extend: {
       colors: {
         blue: {
@@ -35,10 +39,6 @@ module.exports = {
           lightest: '#f8fafc',
           standard: '#b8c2cc',
         },
-      },
-      fontFamily: {
-        exo: ['Exo'],
-        titillium: ['Titillium Web'],
       },
       margin: {
         75: '18.75rem',

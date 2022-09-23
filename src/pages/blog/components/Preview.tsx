@@ -14,11 +14,11 @@ const Preview: React.FC<PreviewProps> = (props: PreviewProps) => {
   return (
     <div className="my-8">
       <Link href={href}>
-        <h2 className="cursor-pointer text-2xl font-bold text-grey-light hover:text-blue-lighter mb-2">
+        <h2 className="cursor-pointer text-2xl text-grey-light hover:text-blue-lighter mb-2">
           {props.title}
         </h2>
       </Link>
-      <div className="mb-3 font-exo">
+      <div className="mb-3">
         <span className="text-blue-dark">
           {props.date} &raquo; {props.readingTime}
         </span>

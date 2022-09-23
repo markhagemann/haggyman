@@ -1,7 +1,7 @@
 ---
 type: 'portfolio'
-title: 'Digital Stack (Public site)'
-description: 'Public facing website for an app designed with Elementor page builder'
+title: 'Digital Stack'
+description: 'Public facing website for an app - designed with Elementor page builder'
 date: '2018-09'
 externalLink: 'https://digitalstack.io'
 postImage: '/images/portfolio/digitalstack-wp.png'

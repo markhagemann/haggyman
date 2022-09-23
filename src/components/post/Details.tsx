@@ -9,7 +9,7 @@ interface DetailsProps {
 
 const Details: React.FC<DetailsProps> = (props: DetailsProps) => {
   return (
-    <div className="mb-5 font-exo flex space-x-2 text-lg text-blue-dark items-center">
+    <div className="mb-5 flex space-x-2 text-lg text-blue-dark items-center">
       <span>
         {props.date} &raquo; {props.readingTime} &raquo;
       </span>

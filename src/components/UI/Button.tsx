@@ -9,7 +9,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   let buttonClass =
-    'bg-transparent text-grey-light font-semibold hover:text-white my-5 py-3 px-5 border border-blue-dark hover:border-blue-light';
+    'bg-transparent text-grey-light font-medium hover:text-white my-5 py-3 px-5 border border-blue-dark hover:border-blue-light';
   if (props.fullWidth) {
     buttonClass += ' w-full';
   }

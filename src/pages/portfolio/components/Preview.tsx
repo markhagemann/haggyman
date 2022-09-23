@@ -29,7 +29,7 @@ const Preview: React.FC<PreviewProps> = (props: PreviewProps) => {
       {props.postImageUrl && (
         <Link href={href}  passHref>
           <Image
-            className="cursor-pointer opacity-90 transition duration-0 hover:opacity-100 hover:duration-150"
+            className="cursor-pointer opacity-100 transition duration-0 hover:opacity-95 hover:duration-150"
             width="608"
             height="288"
             src={props.postImageUrl}

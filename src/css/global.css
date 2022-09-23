@@ -5,7 +5,3 @@
 @import "./base.css";
 @import "./navbar.css";
 @import "./post.css";
-
-.heading-1 {
-  @apply mb-5 text-4xl font-bold;
-}

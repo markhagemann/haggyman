@@ -11,8 +11,8 @@ interface PostProps {
 
 const Post: React.FC<PostProps> = (props: PostProps) => {
   return (
-    <div className="font-titillium">
-      <h2 className="text-3xl font-bold leading-9 mb-2"> {props.title} </h2>
+    <>
+      <h2 className="text-3xl font-medium mb-2">{props.title}</h2>
       <Details
         readingTime={props.readingTime}
         date={props.date}
@@ -22,7 +22,7 @@ const Post: React.FC<PostProps> = (props: PostProps) => {
         className="md-post"
         dangerouslySetInnerHTML={{ __html: props.html }}
       />
-    </div>
+    </>
   );
 };
 

@@ -23,14 +23,9 @@ const Document = () => {
           href="/favicon/favicon-16x16.png"
         />
         <link rel="manifest" href="/favicon/site.webmanifest" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Exo"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Titillium+Web"
-        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500&family=Oxanium:wght@300;400;500&display=swap" rel="stylesheet" />
       </Head>
       <body>
         <Main />
