@@ -1,10 +1,24 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import React from 'react';
+import React, { useRef, useState } from 'react';
+import { useScrollPosition } from '@n8tb1t/use-scroll-position';
+
 
 const Navbar: React.FC = () => {
+  const [navBackgroundStyle, setNavBackgroundStyle] = useState('bg-blue-darker')
+
+  useScrollPosition(
+    ({ prevPos, currPos }) => {
+      if (currPos.y < 0) {
+        setNavBackgroundStyle('bg-blue-darker/[0.8] backdrop-blur-sm');
+      }
+
+    },
+    [navBackgroundStyle]
+  )
+
   return (
-    <nav className="main-nav bg-blue-transparent border-b border-blue-dark fixed w-full z-10 p-5 justify-center flex mb-8 font-titillium text-xl md:pl-84 md:justify-start">
+    <nav className={`main-nav ${navBackgroundStyle} border-b border-blue-dark fixed w-full z-10 p-5 justify-center flex mb-8 text-xl md:pl-84 md:justify-start`}>
       <ul className="flex text-lg gap-4">
         <li>
           <NavLink href="/">
