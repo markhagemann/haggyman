@@ -19,8 +19,8 @@ const ContactForm: React.FC = () => {
       name="contact"
       method="post"
       action="/thanks"
+      netlify-honeypot="bot-field"
       data-netlify="true"
-      data-netlify-honeypot="bot-field"
       className="bg-blue-darker shadow-md rounded px-5 py-5 sm:px-8 sm:py-8 mb-4"
     >
       <input type="hidden" name="bot-field" />
