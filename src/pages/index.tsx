@@ -1,13 +1,17 @@
 import React from 'react';
-import ContactMe from '../common/components/ContactMe';
-import SEO from '../common/components/SEO';
-import Heading from '../common/components/UI/Heading';
-import Layout from '../common/components/UI/Layout';
+import ContactMe from '../components/ContactMe';
+import SEO from '../components/SEO';
+import Heading from '../components/UI/Heading';
+import Layout from '../components/UI/Layout';
 
 const IndexPage: React.FC = () => (
   <Layout showSidebarOnMobile={true}>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Heading centerOnMobile={true} heading="Welcome to Haggyman" />
+    <SEO
+      title="Home"
+      description="Homepage for Haggyman"
+      keywords={[`nextjs`, `application`, `react`]}
+    />
+    <Heading centerOnMobile={true} heading="Welcome" />
     <p>
       My name is Mark Hagemann but I also commonly go by &quot;Haggy&quot; or
       &quot;Haggyman&quot;. Currently based in Melbourne, working for{' '}

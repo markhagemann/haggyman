@@ -1,5 +1,7 @@
-#nav {
+.main-nav {
   a {
+    @apply no-underline border-0 relative;
+
     &:before,
     &:after {
       position: absolute;
@@ -15,30 +17,38 @@
       content: '';
     }
 
-    &:after {
-      left: 0;
-      top: 0;
-      position: absolute;
-      content: attr(data-hover);
-      color: #ffffff;
-      white-space: nowrap;
-      max-width: 0%;
-      overflow: hidden;
-    }
-  }
+    /* &:after { */
+    /*   left: 0; */
+    /*   top: 0; */
+    /*   position: absolute; */
+    /*   content: attr(data-hover); */
+    /*   color: #ffffff; */
+    /*   white-space: nowrap; */
+    /*   max-width: 0%; */
+    /*   overflow: hidden; */
+    /* } */
 
-  .active {
-    &:before {
-      @apply bg-blue-lighter;
+    &:hover:before {
+      opacity: 1;
+      width: 100%;
     }
-  }
-  a:hover:before,
-  .active a:before {
-    opacity: 1;
-    width: 100%;
-  }
-  a:hover:after,
-  .active a:after {
-    max-width: 100%;
+
+    &:hover:after {
+      max-width: 100%;
+    }
+
+    &[aria-current] {
+      @apply border-b border-blue-lighter text-blue-lighter hover:border-blue-lighter;
+
+      &:before {
+        @apply bg-blue-lighter;
+        opacity: 1;
+        width: 100%;
+      }
+
+      /* &:after { */
+      /*   max-width: 100%; */
+      /* } */
+    }
   }
 }
