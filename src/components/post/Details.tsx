@@ -17,7 +17,7 @@ const Details: React.FC<DetailsProps> = (props: DetailsProps) => {
         <a
           className="border-0 text-blue-dark hover:text-blue-standard"
           href={props.externalLink}
-        > 
+        >
           <FaExternalLinkAlt />
         </a>
       )}

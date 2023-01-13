@@ -1,5 +1,3 @@
-const path = require('path');
-
 module.exports = {
   env: {
     browser: true,
@@ -7,21 +5,15 @@ module.exports = {
     es6: true,
   },
   parser: '@typescript-eslint/parser', // Specifies the ESLint parser
-  plugins: [
-    '@typescript-eslint',
-    'graphql',
-    'import',
-    'prettier',
-    'unused-imports',
-  ],
+  plugins: ['@typescript-eslint', 'import', 'prettier', 'unused-imports'],
   extends: [
     'eslint:recommended',
     'plugin:react/recommended', // Uses the recommended rules from @eslint-plugin-react
+    'plugin:@next/next/recommended',
     'plugin:@typescript-eslint/eslint-recommended', // Disables ESLint rules that are unnecessary with TS linting
     'plugin:@typescript-eslint/recommended', // Uses the recommended rules from @typescript-eslint/eslint-plugin
     'plugin:import/typescript',
     'plugin:prettier/recommended',
-    'prettier/@typescript-eslint',
   ],
   parserOptions: {
     ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
@@ -58,6 +50,7 @@ module.exports = {
         ignoreCase: false,
       },
     ],
+    'react/no-unknown-property': [2, { ignore: ['netlify-honeypot'] }],
     'react/prop-types': 'off', // Props validation is not needed when using TypeScript
     'react/react-in-jsx-scope': 'off', // Doesn't work with Next.js
     'unused-imports/no-unused-imports-ts': 'error',

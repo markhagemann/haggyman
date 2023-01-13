@@ -30,9 +30,7 @@ const BlogIndex: React.FC<BlogProps> = ({ posts }) => {
       />
       {posts.map(
         (post): JSX.Element => (
-          <div 
-            key={post.slug}
-          >
+          <div key={post.slug}>
             <Heading centerOnMobile={true} heading="Some of my thoughts" />
             <Preview
               title={post.frontmatter.title}

@@ -4,7 +4,7 @@ import fs from 'fs';
 import { join } from 'path';
 import { readingTime } from './utils';
 import remark from 'remark';
-import { DateTime } from 'luxon'
+import { DateTime } from 'luxon';
 
 const postsDirectory = join(process.cwd(), 'src', 'content', 'blog');
 
@@ -53,8 +53,8 @@ export function getAllBlogPosts() {
   const posts = slugs.map(slug => getBlogPostBySlug(slug));
 
   return posts.sort((a, b) => {
-    const beforeDate = DateTime.fromFormat(a.frontmatter.date, 'MMMM dd, yyyy')
-    const afterDate = DateTime.fromFormat(b.frontmatter.date, 'MMMM dd, yyyy')
-    return afterDate - beforeDate
-  })
+    const beforeDate = DateTime.fromFormat(a.frontmatter.date, 'MMMM dd, yyyy');
+    const afterDate = DateTime.fromFormat(b.frontmatter.date, 'MMMM dd, yyyy');
+    return afterDate - beforeDate;
+  });
 }
