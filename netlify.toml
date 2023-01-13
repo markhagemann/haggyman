@@ -1,8 +1,7 @@
 [build]
-  command = "yarn build"
+  command = "npm run build"
   publish = ".next"
 [build.environment]
   NODE_VERSION = "14.18.1"
-  YARN_VERSION = "1.22.5"
 [[plugins]]
   package = "@netlify/plugin-nextjs"
