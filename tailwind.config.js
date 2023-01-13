@@ -13,7 +13,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      display: ['Oxanium'],
+      display: ['Exo'],
       body: ['Exo'],
     },
     extend: {
