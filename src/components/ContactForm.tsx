@@ -37,7 +37,6 @@ const ContactForm: React.FC = () => {
       name="contact"
       method="post"
       onSubmit={handleSubmit}
-      netlify-honeypot="bot-field"
       className="bg-blue-darker shadow-md rounded px-5 py-5 sm:px-8 sm:py-8 mb-4"
     >
       <input type="hidden" name="form-name" value="contact" />
@@ -82,7 +81,6 @@ const ContactForm: React.FC = () => {
           />
         </div>
       </div>
-      <div data-netlify-recaptcha></div>
       <Button type="submit" text="Send" fullWidth={true} />
     </form>
   );
