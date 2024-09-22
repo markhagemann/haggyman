@@ -14,19 +14,21 @@ const IndexPage: React.FC = () => (
     <Heading centerOnMobile={true} heading="Welcome" />
     <p>
       My name is Mark Hagemann but I also commonly go by &quot;Haggy&quot; or
-      &quot;Haggyman&quot;. Currently based in Melbourne, working for{' '}
+      &quot;Haggyman&quot;. I am a software developer with a focus on the web,
+      and a curiosity for game development. Currently based in Brisbane and
+      working as a technical lead for{' '}
       <a target="_blank" rel="noopener noreferrer" href="https://trevipay.com">
         {' '}
         TreviPay
       </a>
-      . I am a software developer with a focus on the web, and a curiosity for
-      game development.{' '}
+      .{' '}
     </p>
     <br />{' '}
     <p>
       My background began with PHP frameworks such as Laravel, SilverStripe and
       WordPress. These days I am working with Vue, React and Node. I also enjoy
-      learning more about DevOps and design.
+      customizing my neovim configuration, learning more about DevOps and UX
+      design.
     </p>
     <br />
     <p>
