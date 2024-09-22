@@ -19,7 +19,7 @@ export default {
       },
       fontFamily: {
         display: ['Exo'],
-        body: ['Exo'],
+        body: ['Inter'],
       },
       colors: {
         blue: {
