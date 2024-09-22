@@ -18,8 +18,8 @@ export default {
         },
       },
       fontFamily: {
-        display: ['Exo'],
-        body: ['Inter'],
+        display: ['Nunito'],
+        body: ['Nunito'],
       },
       colors: {
         blue: {

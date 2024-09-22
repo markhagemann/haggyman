@@ -12,7 +12,7 @@ h1 {
 }
 
 body {
-  @apply font-body font-light;
+  @apply font-body;
 }
 
 a {

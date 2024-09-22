@@ -12,7 +12,9 @@ interface PostProps {
 const Post: React.FC<PostProps> = (props: PostProps) => {
   return (
     <>
-      <h2 className="text-3xl font-medium mb-2">{props.title}</h2>
+      <h2 className="text-3xl text-blue-light font-medium mb-2">
+        {props.title}
+      </h2>
       <Details
         readingTime={props.readingTime}
         date={props.date}
