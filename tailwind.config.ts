@@ -1,4 +1,8 @@
-module.exports = {
+import type { Config } from 'tailwindcss';
+import borderGradients from 'tailwindcss-border-gradients';
+import bulmaModals from 'tailwindcss-bulma-modals';
+
+export default {
   content: [
     './src/css/*.css',
     './src/**/*.js',
@@ -7,16 +11,16 @@ module.exports = {
     './src/**/*.tsx',
   ],
   theme: {
-    linearBorderGradients: {
-      colors: {
-        'blue-dark': ['#12223c', '#0a3557', '#12223c'],
-      },
-    },
-    fontFamily: {
-      display: ['Exo'],
-      body: ['Exo'],
-    },
     extend: {
+      linearBorderGradients: {
+        colors: {
+          'blue-dark': ['#12223c', '#0a3557', '#12223c'],
+        },
+      },
+      fontFamily: {
+        display: ['Exo'],
+        body: ['Exo'],
+      },
       colors: {
         blue: {
           transparent: 'rgba(8, 31, 45, 0.5)',
@@ -50,8 +54,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require('tailwindcss-border-gradients')(),
-    require('tailwindcss-bulma-modals')(),
-  ],
-};
+  plugins: [bulmaModals(), borderGradients()],
+} satisfies Config;

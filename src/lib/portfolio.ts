@@ -3,7 +3,7 @@ import { parseISO, format } from 'date-fns';
 import fs from 'fs';
 import { join } from 'path';
 import { readingTime } from './utils';
-import remark from 'remark';
+import { remark } from 'remark';
 import { DateTime } from 'luxon';
 
 const postsDirectory = join(process.cwd(), 'src', 'content', 'portfolio');
