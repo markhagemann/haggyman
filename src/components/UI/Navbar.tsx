@@ -46,7 +46,7 @@ const NavLink = ({ children, href }) => {
   const router = useRouter();
 
   return (
-    <Link href={href} passHref>
+    <Link href={href} passHref legacyBehavior>
       {React.cloneElement(child, {
         'aria-current': router.pathname === href ? 'page' : null,
       })}

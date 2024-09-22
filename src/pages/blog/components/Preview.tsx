@@ -13,7 +13,7 @@ const Preview: React.FC<PreviewProps> = (props: PreviewProps) => {
   const href = `/blog/${props.slug}`;
   return (
     <div className="my-8">
-      <Link href={href}>
+      <Link href={href} legacyBehavior>
         <h2 className="cursor-pointer text-2xl text-grey-light hover:text-blue-lighter mb-2">
           {props.title}
         </h2>

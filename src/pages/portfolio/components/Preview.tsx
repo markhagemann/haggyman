@@ -16,7 +16,7 @@ const Preview: React.FC<PreviewProps> = (props: PreviewProps) => {
   const href = `/portfolio/${props.slug}`;
   return (
     <div className="my-8">
-      <Link href={href}>
+      <Link href={href} legacyBehavior>
         <h3 className="cursor-pointer text-2xl font-light text-grey-light hover:text-blue-lighter">
           {props.title}
         </h3>
@@ -27,7 +27,7 @@ const Preview: React.FC<PreviewProps> = (props: PreviewProps) => {
         externalLink={props.externalLink}
       />
       {props.postImageUrl && (
-        <Link href={href} passHref>
+        <Link href={href} passHref legacyBehavior>
           <Image
             className="cursor-pointer opacity-100 transition duration-0 hover:opacity-95 hover:duration-150"
             width="608"
