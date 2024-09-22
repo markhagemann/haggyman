@@ -2,7 +2,7 @@ import React from 'react';
 import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const linkClass = 'no-underline border-0';
-const iconClass = 'hover:text-blue-lighter text-xl';
+const iconClass = 'text-xl';
 
 const Social: React.FC = () => {
   return (

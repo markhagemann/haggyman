@@ -21,7 +21,7 @@ const Layout: React.FC<LayoutProps> = props => {
   const { children } = props;
   const showSidebarOnMobile = props.showSidebarOnMobile ? true : false;
   return (
-    <main className="min-h-screen max-h-full bg-cover bg-blue-darker font-body text-grey-light">
+    <main className="min-h-screen max-h-full bg-cover bg-slate-900 font-body text-grey-light">
       <Navbar />
       <div className="flex flex-col md:flex-row relative">
         <Sidebar showOnMobile={showSidebarOnMobile ? true : false} />

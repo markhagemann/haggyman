@@ -49,8 +49,14 @@ const PortfolioIndex: React.FC<PortfolioProps> = ({ posts }) => {
       </p>
       <Company
         company="TreviPay"
+        role="Tech Lead"
+        years="2023 - Present"
+        noPosts={true}
+      />
+      <Company
+        company="TreviPay"
         role="Developer"
-        years="2019 - Present"
+        years="2019 - 2023"
         noPosts={true}
       />
       <Company

@@ -1,6 +1,6 @@
 .main-nav {
   a {
-    @apply no-underline border-0 relative;
+    @apply text-blue-400 no-underline border-0 relative;
 
     &:before,
     &:after {
@@ -10,7 +10,7 @@
     }
 
     &:before {
-      @apply bg-blue-light;
+      @apply bg-blue-400;
       bottom: -1px;
       height: 1px;
       width: 0%;
@@ -38,10 +38,10 @@
     }
 
     &[aria-current] {
-      @apply border-b border-blue-lighter text-blue-lighter hover:border-blue-lighter;
+      @apply border-b border-blue-light text-blue-light hover:border-blue-light;
 
       &:before {
-        @apply bg-blue-lighter;
+        @apply bg-blue-light;
         opacity: 1;
         width: 100%;
       }

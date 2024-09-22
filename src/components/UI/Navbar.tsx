@@ -4,13 +4,12 @@ import React, { useState } from 'react';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 
 const Navbar: React.FC = () => {
-  const [navBackgroundStyle, setNavBackgroundStyle] =
-    useState('bg-blue-darker');
+  const [navBackgroundStyle, setNavBackgroundStyle] = useState('bg-slate-900');
 
   useScrollPosition(
     ({ currPos }) => {
       if (currPos.y < 0) {
-        setNavBackgroundStyle('bg-blue-darker/[0.8] backdrop-blur-sm');
+        setNavBackgroundStyle('bg-slate-900/[0.8] backdrop-blur-sm');
       }
     },
     [navBackgroundStyle],
@@ -18,7 +17,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`main-nav ${navBackgroundStyle} border-b border-blue-dark fixed w-full z-10 p-5 justify-center flex mb-8 text-xl md:pl-84 md:justify-start`}
+      className={`main-nav ${navBackgroundStyle} border-b border-blue-darker fixed w-full z-10 p-5 justify-center flex mb-8 text-xl md:pl-84 md:justify-start`}
     >
       <ul className="flex font-display font-normal text-lg gap-4">
         <li>

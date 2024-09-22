@@ -7,7 +7,7 @@ interface HeadingProps {
 }
 
 const Heading: React.FC<HeadingProps> = (props: HeadingProps) => {
-  let headingClass = 'mb-5 text-4xl font-medium';
+  let headingClass = 'text-blue-light mb-5 text-4xl font-medium';
   if (props.centerOnMobile) {
     headingClass += ' text-center md:text-left';
   }

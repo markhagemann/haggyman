@@ -14,7 +14,7 @@ export default {
     extend: {
       linearBorderGradients: {
         colors: {
-          'blue-dark': ['#12223c', '#0a3557', '#12223c'],
+          'blue-dark': ['#0F1629', '#12223c', '#0F1629'],
         },
       },
       fontFamily: {
