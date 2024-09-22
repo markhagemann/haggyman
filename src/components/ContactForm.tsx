@@ -29,7 +29,7 @@ const ContactForm: React.FC = () => {
       body: new URLSearchParams(formData).toString(),
     }).then(() => router.push('/thanks').catch(error => console.log(error)));
 
-    e.preventDefault();
+    event.preventDefault();
   };
 
   return (
