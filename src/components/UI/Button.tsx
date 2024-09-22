@@ -10,7 +10,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   let buttonClass =
-    'bg-transparent text-sky-500 font-medium hover:text-white my-5 py-3 px-5 border border-blue-dark hover:border-blue-light';
+    'bg-transparent text-sky-500 font-medium my-5 py-3 px-5 border border-sky-900 hover:border-blue-dark hover:text-blue-standard';
 
   if (props.centerOnPortrait) {
     buttonClass += ' mx-auto md:mx-0';
