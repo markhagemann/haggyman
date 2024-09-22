@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  FaEnvelope,
-  FaGithub,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-} from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const linkClass = 'no-underline border-0';
 const iconClass = 'hover:text-blue-lighter text-xl';
@@ -18,13 +12,6 @@ const Social: React.FC = () => {
           <a className={linkClass} href="https://github.com/markhagemann">
             <span>
               <FaGithub className={iconClass} />
-            </span>
-          </a>
-        </li>
-        <li>
-          <a className={linkClass} href="https://twitter.com/markhagemann1">
-            <span>
-              <FaTwitter className={iconClass} />
             </span>
           </a>
         </li>

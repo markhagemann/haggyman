@@ -1,4 +1,6 @@
+import { useRouter } from 'next/router';
 import React from 'react';
+import { encode } from '../lib/utils';
 import Button from './UI/Button';
 
 function getMessageRows(): number {
@@ -9,20 +11,39 @@ function getMessageRows(): number {
 }
 
 const ContactForm: React.FC = () => {
+  const router = useRouter();
   const labelClass = 'block tracking-wide text-blue-standard font-medium mb-2';
   const inputFocusClass =
     ' focus:outline-none focus:border focus:border-blue-dark';
   const inputClass = `appearance-none border border-blue-darkest block w-full bg-blue-darkest text-white py-3 px-4 ${inputFocusClass}`;
 
+  const handleSubmit = e => {
+    const data = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      message: e.target.message.value,
+    };
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact-form', ...data }),
+    }).then(() => router.push('/thanks').catch(error => console.log(error)));
+
+    e.preventDefault();
+  };
+
   return (
     <form
       name="contact"
       method="post"
-      action="/thanks"
+      onSubmit={handleSubmit}
       netlify-honeypot="bot-field"
       data-netlify="true"
+      data-netlify-recaptcha="true"
       className="bg-blue-darker shadow-md rounded px-5 py-5 sm:px-8 sm:py-8 mb-4"
     >
+      <input type="hidden" name="form-name" value="Contact Me" />
       <input type="hidden" name="bot-field" />
       <h2 className="mb-5 text-blue-light text-3xl font-medium">
         {' '}

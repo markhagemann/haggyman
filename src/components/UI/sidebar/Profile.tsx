@@ -9,6 +9,7 @@ const Profile: React.FC = () => (
       alt="Site author holding his shiba"
       style={{ maxWidth: '175px', maxHeight: '175px' }}
       className="border-2 border-blue-transparent border-gradient-t-blue-dark"
+      priority={true}
       src={profilePic}
     />
   </div>

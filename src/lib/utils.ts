@@ -1,3 +1,9 @@
+export function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+}
+
 // Reading counter from https://blog.devgenius.io/adding-reading-time-stat-in-your-next-js-blog-b1ed5108a41c
 const wordsPerMinute = 225;
 

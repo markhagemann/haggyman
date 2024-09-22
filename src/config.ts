@@ -5,7 +5,4 @@ export default {
   author: {
     name: `Mark Hagemann`,
   },
-  social: {
-    twitter: 'markhagemann1',
-  },
 };
