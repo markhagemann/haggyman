@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router';
 import React from 'react';
-import { encode } from '../lib/utils';
 import Button from './UI/Button';
 
 function getMessageRows(): number {
@@ -17,17 +16,17 @@ const ContactForm: React.FC = () => {
     ' focus:outline-none focus:border focus:border-blue-dark';
   const inputClass = `appearance-none border border-blue-darkest block w-full bg-blue-darkest text-white py-3 px-4 ${inputFocusClass}`;
 
-  const handleSubmit = e => {
-    const data = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      message: e.target.message.value,
-    };
+  const handleSubmit = (event: { preventDefault: () => void; target: any }) => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
 
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...data }),
+      // @ts-expect-error - part of netlify form implementation
+      body: new URLSearchParams(formData).toString(),
     }).then(() => router.push('/thanks').catch(error => console.log(error)));
 
     e.preventDefault();
@@ -83,6 +82,7 @@ const ContactForm: React.FC = () => {
           />
         </div>
       </div>
+      <div data-netlify-recaptcha></div>
       <Button type="submit" text="Send" fullWidth={true} />
     </form>
   );
