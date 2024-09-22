@@ -34,7 +34,7 @@ export function getPortfolioPostBySlug(slug: string): PortfolioPost {
   const date = format(parseISO(data.date), 'MMMM dd, yyyy');
 
   const excerpt = remark()
-    .processSync(content.slice(0, 120) + '...' || '')
+    .processSync(content.slice(0, 180) + '...' || '')
     .toString();
 
   return {

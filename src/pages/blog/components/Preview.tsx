@@ -24,7 +24,7 @@ const Preview: React.FC<PreviewProps> = (props: PreviewProps) => {
         </span>
       </div>
       <p className="mb-3">{props.excerpt}</p>
-      <Link href={href}>(read: More) &#61;&gt; </Link>
+      <Link href={href}>Read More</Link>
     </div>
   );
 };

@@ -31,7 +31,7 @@ export function getBlogPostBySlug(slug: string): BlogPost {
   const date = format(parseISO(data.date), 'MMMM dd, yyyy');
 
   const excerpt = remark()
-    .processSync(content.slice(0, 120) + '...' || '')
+    .processSync(content.slice(0, 240) + '...' || '')
     .toString();
 
   return {

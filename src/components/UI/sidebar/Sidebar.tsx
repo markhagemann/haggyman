@@ -21,11 +21,11 @@ const Sidebar: React.FC<SidebarProps> = (props: SidebarProps) => {
     <aside className={mobileClass(props)}>
       <Profile />
       <div className="m-2 text-center">
-        <h2 className="font-light text-blue-light text-3xl">
+        <h2 className="font-light text-blue-dark text-3xl">
           <span className="mr-2">Mark</span>
           <span className="font-medium">Hagemann </span>
         </h2>
-        <h3 className="font-light text-blue-dark my-1 text-2xl">
+        <h3 className="font-light text-slate-500 my-1 text-2xl">
           {' '}
           Full Stack Developer{' '}
         </h3>
