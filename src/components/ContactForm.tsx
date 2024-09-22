@@ -40,7 +40,6 @@ const ContactForm: React.FC = () => {
       className="bg-blue-darker shadow-md rounded px-5 py-5 sm:px-8 sm:py-8 mb-4"
     >
       <input type="hidden" name="form-name" value="contact" />
-      <input type="hidden" name="bot-field" />
       <h2 className="mb-5 text-blue-light text-3xl font-medium">
         {' '}
         Contact me{' '}
