@@ -27,7 +27,7 @@ const ContactForm: React.FC = () => {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact-form', ...data }),
+      body: encode({ 'form-name': 'contact', ...data }),
     }).then(() => router.push('/thanks').catch(error => console.log(error)));
 
     e.preventDefault();
