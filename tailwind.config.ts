@@ -55,4 +55,4 @@ export default {
     },
   },
   plugins: [bulmaModals(), borderGradients()],
-} satisfies Config;
+} as Config;
