@@ -25,7 +25,7 @@ const Sidebar: React.FC<SidebarProps> = (props: SidebarProps) => {
           <span className="mr-2">Mark</span>
           <span className="font-medium">Hagemann </span>
         </h2>
-        <h3 className="font-light text-slate-500 my-1 text-2xl">
+        <h3 className="font-light text-slate-400 my-1 text-2xl">
           {' '}
           Full Stack Developer{' '}
         </h3>

@@ -29,6 +29,7 @@ class ContactMe extends React.Component<ContactMeProps, ContactMeState> {
           <ContactForm />
         </Modal>
         <Button
+          centerOnPortrait={true}
           text="Want to get in touch?"
           onClick={() => this.setState({ isModalActive: true })}
         />

@@ -11,7 +11,7 @@ const IndexPage: React.FC = () => (
       description="Homepage for Haggyman"
       keywords={[`nextjs`, `application`, `react`]}
     />
-    <Heading centerOnMobile={true} heading="Welcome" />
+    <Heading centerOnPortrait={true} heading="Welcome" />
     <p>
       My name is Mark Hagemann but I also commonly go by &quot;Haggy&quot; or
       &quot;Haggyman&quot;. I am a software developer with a focus on the web,
@@ -37,7 +37,7 @@ const IndexPage: React.FC = () => (
       avoid being choked out by someone in Brazilian Jiu-Jitsu, watching movies
       or playing video games with friends.
     </p>
-    <div className="md:text-left">
+    <div className="flex">
       <ContactMe />
     </div>
   </Layout>

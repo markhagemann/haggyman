@@ -5,11 +5,17 @@ interface ButtonProps {
   onClick?: () => void;
   type?: 'button' | 'submit' | 'reset';
   fullWidth?: boolean;
+  centerOnPortrait?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   let buttonClass =
     'bg-transparent text-grey-light font-medium hover:text-white my-5 py-3 px-5 border border-blue-dark hover:border-blue-light';
+
+  if (props.centerOnPortrait) {
+    buttonClass += ' mx-auto md:mx-0';
+  }
+
   if (props.fullWidth) {
     buttonClass += ' w-full';
   }

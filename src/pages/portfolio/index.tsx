@@ -39,7 +39,7 @@ const PortfolioIndex: React.FC<PortfolioProps> = ({ posts }) => {
         ]}
       />
       <Heading
-        centerOnMobile={true}
+        centerOnPortrait={true}
         heading="Some projects I've contributed to"
       />
       <p className="text-center text-lg md:text-left">

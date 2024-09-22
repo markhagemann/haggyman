@@ -2,13 +2,13 @@ import React from 'react';
 
 interface HeadingProps {
   heading: string;
-  centerOnMobile?: boolean;
+  centerOnPortrait?: boolean;
   underline?: boolean;
 }
 
 const Heading: React.FC<HeadingProps> = (props: HeadingProps) => {
   let headingClass = 'text-blue-light mb-5 text-4xl font-medium';
-  if (props.centerOnMobile) {
+  if (props.centerOnPortrait) {
     headingClass += ' text-center md:text-left';
   }
   if (props.underline) {
