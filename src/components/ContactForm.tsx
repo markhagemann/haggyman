@@ -16,13 +16,13 @@ const ContactForm: React.FC = () => {
     ' focus:outline-none focus:border focus:border-blue-dark';
   const inputClass = `appearance-none border border-blue-darkest block w-full bg-blue-darkest text-white py-3 px-4 ${inputFocusClass}`;
 
-  const handleSubmit = (event: { preventDefault: () => void; target: any }) => {
+  const handleSubmit = async (event: React.SyntheticEvent<EventTarget>) => {
     event.preventDefault();
 
-    const myForm = event.target;
+    const myForm = event.target as HTMLFormElement;
     const formData = new FormData(myForm);
 
-    fetch('/', {
+    await fetch('/__forms.html', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       // @ts-expect-error - part of netlify form implementation

@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`main-nav ${navBackgroundStyle} border-b border-blue-darker fixed w-full z-10 p-5 justify-center flex mb-8 text-xl md:pl-84 md:justify-start`}
+      className={`main-nav ${navBackgroundStyle} border-b border-gradient-r-blue-dark fixed w-full z-10 p-5 justify-center flex mb-8 text-xl md:pl-84 md:justify-start`}
     >
       <ul className="flex font-display font-normal text-lg gap-4">
         <li>
