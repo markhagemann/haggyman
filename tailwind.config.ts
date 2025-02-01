@@ -18,8 +18,8 @@ export default {
         },
       },
       fontFamily: {
-        display: ['Nunito'],
-        body: ['Nunito'],
+        display: ['Poppins'],
+        body: ['Outfit'],
       },
       colors: {
         blue: {
