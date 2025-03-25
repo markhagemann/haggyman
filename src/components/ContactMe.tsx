@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-empty-interface */
 import React from 'react';
 import ContactForm from './ContactForm';
 import Button from './UI/Button';
 import Modal from './UI/Modal';
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface ContactMeProps {}
 
 interface ContactMeState {

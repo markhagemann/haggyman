@@ -18,6 +18,7 @@ const Details: React.FC<DetailsProps> = (props: DetailsProps) => {
           className="border-0 text-blue-dark hover:text-blue-standard"
           href={props.externalLink}
           target="_blank"
+          rel="noopener noreferrer"
         >
           <FaExternalLinkAlt />
         </a>
