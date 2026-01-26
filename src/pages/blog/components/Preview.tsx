@@ -23,8 +23,10 @@ const Preview: React.FC<PreviewProps> = (props: PreviewProps) => {
           {props.date} &raquo; {props.readingTime}
         </span>
       </div>
-      <p className="mb-3">{props.excerpt}</p>
-      <Link href={href}>Read More</Link>
+      <div className="text-lg">
+        <p className="mb-3">{props.excerpt}</p>
+        <Link href={href}>Read More</Link>
+      </div>
     </div>
   );
 };

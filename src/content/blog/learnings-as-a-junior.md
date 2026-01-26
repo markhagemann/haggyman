@@ -24,10 +24,10 @@ and [Tailwind](https://tailwindcss.com/docs/what-is-tailwind).
 
 The importance of having someone review your code cannot be repeated enough.
 
-1. It reduces bugs in production and catches out errors / typos
-2. You're less likely to submit code you're not proud of
-3. Helps with consistency and legibility
-4. Helps share knowledge
+- It reduces bugs in production and catches out errors / typos
+- You're less likely to submit code you're not proud of
+- Helps with consistency and legibility
+- Helps share knowledge
 
 Don't take criticism of your code as criticism of you personally. You stand to gain a lot more by
 allowing others to review your code, regardless of whether you completely agree with their comments.
@@ -49,10 +49,10 @@ of some common pitfalls. After that as a team / individual you can make your own
 
 In addition to that, here are a few other things I recommend looking into:
 
-1. Podcasts such as [Syntax.fm](https://syntax.fm/) is one of my favourites and they cover very relevant topics
-2. Learning resources such as [Udemy](https://udemy.com), [Laracasts](https://laracasts.com) and [freeCodeCamp](https://www.freecodecamp.org/)
-3. Meetups through websites such as [Meetup](https://www.meetup.com) as well as conferences
-4. Management tools such as [Todoist](https://todoist.com) and [Trello](https://trello.com)
+- Podcasts such as [Syntax.fm](https://syntax.fm/) is one of my favourites and they cover very relevant topics
+- Learning resources such as [Udemy](https://udemy.com), [Laracasts](https://laracasts.com) and [freeCodeCamp](https://www.freecodecamp.org/)
+- Meetups through websites such as [Meetup](https://www.meetup.com) as well as conferences
+- Management tools such as [Todoist](https://todoist.com) and [Trello](https://trello.com)
 
 ### Try to build things you'd personally find useful
 

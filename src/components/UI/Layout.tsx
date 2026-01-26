@@ -11,7 +11,7 @@ interface LayoutProps {
 
 const containerClass: (props: LayoutProps) => string = props => {
   return classNames({
-    'container mx-auto max-w-2xl px-5 pb-8 md:text-left md:px-8 md:ml-75': true,
+    'container mx-auto max-w-5xl px-5 pb-8 md:text-left md:px-8 md:ml-75': true,
     'mt-8': props.showSidebarOnMobile,
     'mt-32': !props.showSidebarOnMobile,
     'md:mt-0': props.centerContent,

@@ -20,6 +20,7 @@
   p,
   ul,
   ol {
+    @apply text-lg;
     margin-bottom: 1.45em;
     display: block;
   }
