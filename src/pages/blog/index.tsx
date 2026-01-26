@@ -22,7 +22,7 @@ export async function getServerSideProps() {
 
 const BlogIndex: React.FC<BlogProps> = ({ posts }) => {
   return (
-    <Layout>
+    <Layout centerContent={true}>
       <SEO
         title="Blog"
         description="Some of my thoughts"

@@ -5,40 +5,46 @@ import Heading from '../components/UI/Heading';
 import Layout from '../components/UI/Layout';
 
 const IndexPage: React.FC = () => (
-  <Layout showSidebarOnMobile={true}>
+  <Layout showSidebarOnMobile={true} centerContent={true}>
     <SEO
       title="Home"
       description="Homepage for Haggyman"
       keywords={[`nextjs`, `application`, `react`]}
     />
-    <Heading centerOnPortrait={true} heading="Welcome" />
-    <p>
-      My name is Mark Hagemann but I also commonly go by &quot;Haggy&quot; or
-      &quot;Haggyman&quot;. I am a software developer with a focus on the web,
-      and a curiosity for game development. Currently based in Brisbane and
-      working as a technical lead for{' '}
-      <a target="_blank" rel="noopener noreferrer" href="https://trevipay.com">
+    <div className="flex flex-col justify-center">
+      <Heading centerOnPortrait={true} heading="Welcome" />
+      <p>
+        My name is Mark Hagemann but I also commonly go by &quot;Haggy&quot; or
+        &quot;Haggyman&quot;. I am a software developer with a focus on the web,
+        and a curiosity for game development. Currently based in Brisbane and
+        working as a technical lead for{' '}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://trevipay.com"
+        >
+          {' '}
+          TreviPay
+        </a>
+        .{' '}
+      </p>
+      <br />{' '}
+      <p>
+        My background began with PHP frameworks such as Laravel, SilverStripe
+        and WordPress. These days I am working with Vue, React and Node. I also
+        enjoy customizing my neovim configuration, learning more about DevOps
+        and UX design.
+      </p>
+      <br />
+      <p>
         {' '}
-        TreviPay
-      </a>
-      .{' '}
-    </p>
-    <br />{' '}
-    <p>
-      My background began with PHP frameworks such as Laravel, SilverStripe and
-      WordPress. These days I am working with Vue, React and Node. I also enjoy
-      customizing my neovim configuration, learning more about DevOps and UX
-      design.
-    </p>
-    <br />
-    <p>
-      {' '}
-      When I&apos;m not coding something, you will usually find me trying to
-      avoid being choked out by someone in Brazilian Jiu-Jitsu, watching movies
-      or playing video games with friends.
-    </p>
-    <div className="flex">
-      <ContactMe />
+        When I&apos;m not coding something, you will usually find me trying to
+        avoid being choked out by someone in Brazilian Jiu-Jitsu, watching
+        movies or playing video games with friends.
+      </p>
+      <div className="flex">
+        <ContactMe />
+      </div>
     </div>
   </Layout>
 );

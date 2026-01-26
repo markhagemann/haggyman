@@ -9,41 +9,33 @@ interface ModalProps {
 const Modal: React.FC<ModalProps> = props => {
   const { children } = props;
   const node = useRef<HTMLDivElement>(null);
-  // TODO: Figure out proper type of event
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const handleClick = (e: any) => {
-    if (node && node.current && node.current.contains(e.target)) {
-      // inside click
+
+  const handleClick = (e: MouseEvent) => {
+    if (node.current && node.current.contains(e.target as Node)) {
       return;
     }
-    // outside click
-    return props.onClose();
+    props.onClose();
   };
 
   useEffect(() => {
-    document.addEventListener('mousedown', handleClick);
-
+    if (props.isActive) {
+      document.addEventListener('mousedown', handleClick);
+    }
     return () => {
       document.removeEventListener('mousedown', handleClick);
     };
-  }, []);
+  }, [props.isActive]);
 
-  let modalClass = 'modal';
-  if (props.isActive) {
-    modalClass = 'modal is-active is-clipped';
-  }
+  if (!props.isActive) return null;
 
   return (
-    <div className={modalClass}>
-      <div className="modal-background" />
-      <div ref={node} className="modal-content">
+    <div className="fixed inset-0 z-50 flex items-center justify-center">
+      <div
+        ref={node}
+        className="relative rounded-lg shadow-lg max-w-2xl w-full mx-4"
+      >
         {children}
       </div>
-      <button
-        onClick={() => props.onClose()}
-        className="modal-close"
-        aria-label="close"
-      />
     </div>
   );
 };

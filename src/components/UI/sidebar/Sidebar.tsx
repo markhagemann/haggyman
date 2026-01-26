@@ -7,9 +7,9 @@ interface SidebarProps {
   showOnMobile?: boolean;
 }
 
-const mobileClass: (props: SidebarProps) => string = props => {
+const sidebarClass: (props: SidebarProps) => string = props => {
   return classNames({
-    'border-blue-transparent border-gradient-b-blue-dark flex-col justify-center px-5 mt-24 md:w-75 md:fixed md:h-screen md:mt-0 md:border-r':
+    'flex-col justify-center px-5 pb-5 mt-24 border-gradient-r-blue-dark border-b md:w-75 md:fixed md:h-screen md:pb-0 md:mt-0 md:border-r md:border-gradient-b-blue-dark':
       true,
     'hidden md:flex': !props.showOnMobile,
     flex: props.showOnMobile,
@@ -18,7 +18,7 @@ const mobileClass: (props: SidebarProps) => string = props => {
 
 const Sidebar: React.FC<SidebarProps> = (props: SidebarProps) => {
   return (
-    <aside className={mobileClass(props)}>
+    <aside className={sidebarClass(props)}>
       <Profile />
       <div className="m-2 text-center">
         <h2 className="font-light text-blue-dark text-3xl">

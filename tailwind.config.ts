@@ -1,6 +1,5 @@
 import type { Config } from 'tailwindcss';
 import borderGradients from 'tailwindcss-border-gradients';
-import bulmaModals from 'tailwindcss-bulma-modals';
 
 export default {
   content: [
@@ -54,5 +53,5 @@ export default {
       },
     },
   },
-  plugins: [bulmaModals(), borderGradients()],
+  plugins: [borderGradients()],
 } as Config;

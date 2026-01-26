@@ -37,10 +37,10 @@ const ContactForm: React.FC = () => {
       name="contact"
       method="post"
       onSubmit={handleSubmit}
-      className="bg-blue-darker shadow-md rounded px-5 py-5 sm:px-8 sm:py-8 mb-4"
+      className="bg-blue-darker shadow-md rounded px-5 py-5 sm:px-8 mb-4"
     >
       <input type="hidden" name="form-name" value="contact" />
-      <h2 className="mb-5 text-blue-light text-3xl font-medium">
+      <h2 className="mt-0 mb-5 text-blue-light text-3xl font-medium">
         {' '}
         Contact me{' '}
       </h2>

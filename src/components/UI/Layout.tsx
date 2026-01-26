@@ -6,14 +6,17 @@ import Sidebar from './sidebar/Sidebar';
 interface LayoutProps {
   children?: React.ReactNode;
   showSidebarOnMobile?: boolean;
+  centerContent?: boolean;
 }
 
 const containerClass: (props: LayoutProps) => string = props => {
-  const showSidebarOnMobile = props.showSidebarOnMobile ? true : false;
   return classNames({
-    'container mx-auto max-w-2xl px-5 my-8 md:mt-16 md:text-left md:pt-24 md:px-8 md:ml-75':
-      true,
-    'mt-32': !showSidebarOnMobile,
+    'container mx-auto max-w-2xl px-5 pb-8 md:text-left md:px-8 md:ml-75': true,
+    'mt-8': props.showSidebarOnMobile,
+    'mt-32': !props.showSidebarOnMobile,
+    'md:mt-0': props.centerContent,
+    'md:flex md:justify-center md:items-center md:min-h-screen':
+      props.centerContent,
   });
 };
 
