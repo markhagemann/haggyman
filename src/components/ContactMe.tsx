@@ -20,7 +20,7 @@ class ContactMe extends React.Component<ContactMeProps, ContactMeState> {
       formComplete: false,
     };
   }
-  render(): JSX.Element {
+  render(): React.JSX.Element {
     return (
       <>
         <Modal

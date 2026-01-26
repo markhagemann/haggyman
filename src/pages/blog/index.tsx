@@ -29,7 +29,7 @@ const BlogIndex: React.FC<BlogProps> = ({ posts }) => {
         keywords={[`programming`, `web development`, `javascript`]}
       />
       {posts.map(
-        (post): JSX.Element => (
+        (post): React.JSX.Element => (
           <div key={post.slug}>
             <Heading centerOnPortrait={true} heading="Some of my thoughts" />
             <Preview
