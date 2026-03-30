@@ -9,6 +9,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import js from '@eslint/js';
 import { FlatCompat } from '@eslint/eslintrc';
+import nextPlugin from '@next/eslint-plugin-next';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -23,7 +24,6 @@ export default [
     compat.extends(
       'eslint:recommended',
       'plugin:react/recommended',
-      'plugin:@next/next/recommended',
       'plugin:@typescript-eslint/eslint-recommended',
       'plugin:@typescript-eslint/recommended',
       'plugin:import/typescript',
@@ -36,6 +36,7 @@ export default [
       import: fixupPluginRules(_import),
       prettier: fixupPluginRules(prettier),
       'unused-imports': unusedImports,
+      '@next/next': nextPlugin,
     },
 
     languageOptions: {
@@ -64,6 +65,9 @@ export default [
     },
 
     rules: {
+      ...nextPlugin.configs.recommended.rules,
+      ...nextPlugin.configs['core-web-vitals'].rules,
+
       '@typescript-eslint/explicit-function-return-type': 'off',
 
       '@typescript-eslint/no-empty-interface': [
